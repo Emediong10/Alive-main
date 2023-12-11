@@ -467,14 +467,6 @@
     <input type="checkbox" wire:model="spiritual_gift" name="Discerning_of_spirits" value="Discerning_of_spirits">
     </div>
     <div class="form-group">
-      <label for="Word_of_wisdom">Word of wisdom</label>
-    <input type="checkbox" wire:model="spiritual_gift" name="Word_of_wisdom" value="Word_of_wisdom">
-    </div>
-    <div class="form-group">
-      <label for="Word_of_wisdom">Word of wisdom</label>
-    <input type="checkbox" wire:model="spiritual_gift" name="Word_of_wisdom" value="Word_of_wisdom">
-    </div>
-    <div class="form-group">
       <label for="Divers_kinds_of_tongues">Divers kinds of tongues</label>
     <input type="checkbox" wire:model="spiritual_gift" name="Divers_kinds_of_tongues" value="Divers_kinds_of_tongues">
     </div>
