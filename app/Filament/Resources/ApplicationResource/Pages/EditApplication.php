@@ -27,4 +27,8 @@ class EditApplication extends EditRecord
         //dd($data);
         return $data;
     }
+    protected function getRedirectUrl(): string
+{
+    return $this->getResource()::getUrl('index');
+}
 }

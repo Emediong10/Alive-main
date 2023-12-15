@@ -9,7 +9,7 @@
     <div class="col-lg-7 col-md-10">
         <div class="content-wrap bg-light">
             <h4 class="center">ALIVE Nigeria Membership Registration Form</h4>
-         
+
         <div class="stepwizard">
             <div class="stepwizard-row setup-panel">
                 <div class="multi-wizard-step">
@@ -28,7 +28,7 @@
                         disabled="disabled">3</a>
                     <p>Final submission</p>
                 </div>
-                
+
             </div>
             </div>
 
@@ -47,7 +47,7 @@
                 </div>
                 @endif
             </div>
-      
+
         <div class="row setup-content {{ $currentStep != 1 ? 'display-none' : '' }}" id="step-1">
             <div class="col-md-12">
                 <h3> Step 1</h3>
@@ -102,7 +102,7 @@
                     @error('chapter') <span class="error" style="color:red;">{{ $message }}</span> @enderror
                 </div>
 
-              
+
                 <button class="btn btn-primary nextBtn btn-lg pull-right" wire:click="firstStepSubmit"
                     type="button">Next</button>
             </div>
@@ -116,7 +116,7 @@
                         <input type="radio" class="" name="monthly_outreach" wire:model="monthly_outreach" value="yes">Yes
                       </label>
                       <label class="radio-inline">
-                        <input type="radio" class=""  name="monthly_outreach" wire:model="monthly_outreach" value="No">No
+                        <input type="radio" class=""  name="monthly_outreach" wire:model="monthly_outreach" value="no">No
                       </label>
                     @error('monthly_outreach') <span class="error" style="color: red;">{{ $message }}</span> @enderror
                 </div>
@@ -127,7 +127,7 @@
                         <input type="radio" class="" name="christian_standard" wire:model="christian_standard" value="yes">Yes
                       </label>
                       <label class="radio-inline">
-                        <input type="radio" class="" name="christian_standard" wire:model="christian_standard" value="No">No
+                        <input type="radio" class="" name="christian_standard" wire:model="christian_standard" value="no">No
                       </label>
                       @error('christian_standard') <span class="error" style="color: red;">{{ $message }}</span> @enderror
                 </div>
@@ -138,7 +138,7 @@
                         <input type="radio" class="" name="professional" wire:model="professional" value="yes">Yes
                       </label>
                       <label class="radio-inline">
-                        <input type="radio" class="" name="professional" wire:model="professional" value="No">No
+                        <input type="radio" class="" name="professional" wire:model="professional" value="no">No
                       </label>
                       @error('graduate') <span class="error" style="color: red;">{{ $message }}</span> @enderror
                 </div>
@@ -150,7 +150,7 @@
                         <input type="radio" class="" name="attended_mission" wire:model="attended_mission" value="yes">Yes
                       </label>
                       <label class="radio-inline">
-                        <input type="radio" class="" name="attended_mission" wire:model="attended_mission" value="No">No
+                        <input type="radio" class="" name="attended_mission" wire:model="attended_mission" value="no">No
                       </label>
                       @error('attended_mission') <span class="error" style="color: red;">{{ $message }}</span> @enderror
                 </div>
@@ -159,10 +159,9 @@
                 <div class="form-group">
                     <p> I desire to support ALIVE-Nigeria ministry with at least monthly</p>
                     <select class="form-select" wire:model="will_support" id="will_support">
-                        <option>1k - 5k</option>
-                        <option>6k - 9k</option>
-                         <option>10k above</option>
-                        <option></option>
+                        <option value="5kbellow">1k - 5k</option>
+                        <option value="9kbellow">6k - 9k</option>
+                         <option value="10kabove">10k above</option>
                     </select>
                 </div>
 
@@ -181,7 +180,7 @@
                         <input type="radio" class="" wire:click="$set('show_monthly_amount',true)" wire:model="monthly_support" value="yes">Yes
                       </label>
                       <label class="radio-inline">
-                        <input type="radio" class="" wire:model="monthly_support" value="No">No
+                        <input type="radio" class="" wire:model="monthly_support" value="no">No
                       </label>
                       @error('monthly_support') <span class="error" style="color: red;">{{ $message }}</span> @enderror
                 </div>
@@ -203,7 +202,7 @@
                 </div>
                 @endif
                 <br>
-               
+
                   <div>
                     <label for="password">Create Password:</label>
                     <input type="password" id="password" wire:model="password" class="form-control" placeholder="Create a password">
@@ -226,6 +225,6 @@
         </div>
     </div>
 </div>
-  
+
 
 

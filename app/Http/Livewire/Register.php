@@ -107,6 +107,8 @@ class Register extends Component
             'currency'=> $this->currency
         ];
 
+        dd($answers['will_support']);
+
 
         $user = User::create([
             'firstname'=>$this->firstname,
@@ -120,7 +122,21 @@ class Register extends Component
             'password' =>\Hash::make($this->password),
         ]);
 
-        $user->assignRole('member');
+        if($answers['monthly_outreach'] == 'yes' && $answers['will_support'] == '10kabove'){
+            $user->assignRole('financial');
+        }
+
+        if($answers['monthly_outreach'] == 'yes' && $answers['will_support'] == '9kbellow'){
+            $user->assignRole('member');
+        }
+
+        if($answers['monthly_outreach'] == 'yes' && $answers['will_support'] == '5kbellow'){
+            $user->assignRole('member');
+        }else{
+
+            $user->assignRole('volunteer');
+        }
+
 
         Application::create([
             'answers'=>[$answers],

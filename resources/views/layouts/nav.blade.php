@@ -1,4 +1,4 @@
-<header id="header" class="transparent-header header-size-custom" data-sticky-shrink="false">
+<header id="header" class="transparent-header header-size-custom, no-sticky" >
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">

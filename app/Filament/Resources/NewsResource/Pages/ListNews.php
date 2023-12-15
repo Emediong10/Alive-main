@@ -24,3 +24,4 @@ class ListNews extends ListRecords
         ];
     }
 }
+// https://drive.google.com/uc?id=1XD2RERSd6yalqqoywzPv7N83XJ9aApsw&export=download
