@@ -43,9 +43,9 @@
 							<div class="fslider" data-pagi="false" data-arrows="false">
 								<div class="flexslider">
 									<div class="slider-wrap">
-										<div class="slide"><img src="{{ asset ('assets/images/alive1.jpeg')}}" alt="Slider 1"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/alive2.jpeg')}}" alt="Slider 2"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/alive3.jpeg')}}" alt="Slider 3"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alive1.jpeg')}}" alt="Slider 1"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alive2.jpeg')}}" alt="Slider 2"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alive3.jpeg')}}" alt="Slider 3"></div>
 									</div>
 								</div>
 							</div>
@@ -55,9 +55,9 @@
 							<div class="fslider" data-animation="fade" data-pagi="false" data-arrows="false">
 								<div class="flexslider">
 									<div class="slider-wrap">
-										<div class="slide"><img src="{{ asset ('assets/images/alive4.jpeg')}}" alt="Slider 1"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/alive5.jpeg')}}" alt="Slider 2"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/alive6.jpeg')}}" alt="Slider 3"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alive4.jpeg')}}" alt="Slider 1"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alive5.jpeg')}}" alt="Slider 2"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alive6.jpeg')}}" alt="Slider 3"></div>
 									</div>
 								</div>
 							</div>
@@ -66,9 +66,9 @@
 							<div class="fslider" data-direction="vertical" data-pagi="false" data-arrows="false">
 								<div class="flexslider">
 									<div class="slider-wrap">
-										<div class="slide"><img src="{{ asset ('assets/images/alive7.jpg')}}" alt="Slider 1"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/alive8.jpg')}}" alt="Slider 2"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/alive9.jpg')}}" alt="Slider 3"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alive7.jpg')}}" alt="Slider 1"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alive8.jpg')}}" alt="Slider 2"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alive9.jpg')}}" alt="Slider 3"></div>
 									</div>
 								</div>
 							</div>

@@ -35,7 +35,10 @@ class UsersResource extends Resource
     {
         return $form
             ->schema([
-               //
+                TextInput::make('firstname'),
+                TextInput::make('middlename'),
+                TextInput::make('lastname'),
+                TextInput::make('email')
             ]);
     }
 
@@ -46,12 +49,9 @@ class UsersResource extends Resource
                 TextColumn::make('firstname')->searchable(),
                 TextColumn::make('middlename')->searchable(),
                 TextColumn::make('lastname')->searchable(),
-                TextColumn::make('gender')->getStateUsing(function($record){
-                    return ucfirst($record->gender);
-                })->sortable(),
                 TextColumn::make('email')->searchable(),
                 TextColumn::make('phone')->searchable(),
-                TextColumn::make('chapter')->sortable()->searchable(),
+                TextColumn::make('gender')->searchable(),
                 TextColumn::make('member_type.type')->sortable(),
             ])
             ->filters([
@@ -76,7 +76,7 @@ class UsersResource extends Resource
     {
         return [
             'index' => Pages\ListUsers::route('/'),
-            'create' => Pages\CreateUsers::route('/create'),
+           
             'edit' => Pages\EditUsers::route('/{record}/edit'),
         ];
     }

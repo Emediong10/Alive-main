@@ -2,14 +2,15 @@
 
 namespace App\Models;
 
+use App\Models\Chapter;
 use Laravel\Sanctum\HasApiTokens;
+use Filament\Models\Contracts\HasName;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
+use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Filament\Models\Contracts\HasName;
-use Filament\Models\Contracts\FilamentUser;
 
 class User extends Authenticatable
 
@@ -61,10 +62,10 @@ class User extends Authenticatable
     //     return $this->role === $role;
     // }
 
-    // public function user()
-    // {
-    //     return $this->belongsTo(User::class);
-    // }
+    public function chapter()
+    {
+        return $this->belongsTo(Chapter::class);
+    }
 
     
 }

@@ -24,18 +24,11 @@ class HomeController extends Controller
         return view('Home.registration');
     }
 
-    public function application()
-    {
-        return view('Home.application');
-    }
-
     public function eligibility()
     {
     return view('Eligibility.form');
     }
-
-
-
+    
     public function membership_policy()
     {
     return view('Eligibility.membership_policy');

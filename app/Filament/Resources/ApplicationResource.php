@@ -45,24 +45,14 @@ class ApplicationResource extends Resource
             ->schema([
                 Section::make('View Application')->schema([
                    
-                    // Select::make('gender')->options([
-                    //     'male'=>'Male',
-                    //     'female'=>'Female'
-                    // ])->disabledOn('edit'),
-                    // DatePicker::make('dob')->label('Date of Birth')->disabledOn('edit'),
-                    // Select::make('chapter_id')->relationship('chapter','name'),
+                   
                     Select::make('member_type_id')->relationship('member_type','type')->required(),
                     Toggle::make('status')->label('Review Completed'),
                     Repeater::make('answers')->schema([
                         TextInput::make('monthly_outreach')->label('I personally do active outreach monthly (not just church work):')->disabledOn('edit'),
-                        // TextInput::make('outreach')->label('I have recent personal outreach experiences to share:')->disabledOn('edit'),
-                        // RichEditor::make('outreach_experience')->label('My Outreach Experience:'),
-                        // TextInput::make('christian_standard')->label('I strive to live out our high Christian standard as taught by the Bible and SOP:')->disabledOn('edit'),
-                        // TextInput::make('graduate')->label('I am a gradaute:')->disabledOn('edit'),
+                        
                         TextInput::make('professional')->label('I am a professional:')->disabledOn('edit'),
-                        // TextInput::make('attended_missions')->label('I have attended an ALIVE mission at least once:')->disabledOn('edit'),
-                        // TextInput::make('good_standing_adventist')->label('I am an adventist in good standing with my church:')->disabledOn('edit'),
-                        // TextInput::make('have_supported')->label('I supported the ALIVE-Nigeria ministry in the past year with at least:')->disabledOn('edit'),
+                       
                         TextInput::make('will_support')->label('I desire to support ALIVE-Nigeria ministry with at least monthly:')->disabledOn('edit'),
                         TextInput::make('monthly_support')->label('Do you intend to support the ministry of ALIVE Nigeria on a monthly basis?')->disabledOn('edit'),
                         TextInput::make('monthly_amount')->label('Specify Amount you intend to Support Alive Nigeria with')->disabledOn('edit'),
@@ -86,7 +76,6 @@ class ApplicationResource extends Resource
                     TextColumn::make('user.email')->label('Email')->searchable(),
                     TextColumn::make('user.phone')->label('phone')->searchable(),
                     TextColumn::make('user.gender')->label('Gender')->searchable(),
-                    TextColumn::make('chapter.id')->label('Chapter'),
                 TextColumn::make('status')->getStateUsing(function($record){
                     if($record->status==0 || $record->status==null)
                     {
