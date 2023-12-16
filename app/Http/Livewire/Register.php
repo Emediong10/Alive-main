@@ -10,7 +10,7 @@ use Livewire\Component;
 class Register extends Component
 {
     public $chapters,$user;
-    public $currentStep = 3;
+    public $currentStep = 1;
     public $firstname, $middlename, $lastname, $email,$dob,$gender, $phone, $chapter,$status = 1;
     public $successMsg = '', $monthly_outreach, $outreach, $outreach_experience, $christian_standard, $professional, $attended_mission, $good_standing_adventist;
     public  $will_support, $have_supported, $show_outreach=false, $show_monthly_amount=false, $monthly_support, $monthly_amount, $currency, $password, $confirm_password, $Chapter;
