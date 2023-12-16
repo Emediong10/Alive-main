@@ -1,4 +1,4 @@
-<header id="header" class="transparent-header header-size-custom" data-sticky-shrink="false">
+<header id="header" class="header-size-custom" data-sticky-shrink="true">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
@@ -6,9 +6,8 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html" class="standard-logo"><img src="{{ url('assets/images/Aliveng.png') }}" alt="Alive Logo"></a>
-							<a href="index.html" class="retina-logo"><img src="demos/ecommerce/images/logo@2x.png" alt="Alive Logo"></a>
-						</div><!-- #logo end -->
+							<a href="{{ url('/') }}" class="standard-logo"><img src="{{ url('assets/images/Aliveng.png') }}" alt="Alive Logo"></a>
+						 </div><!-- #logo end -->
 
 
 						<div id="primary-menu-trigger">

@@ -1,8 +1,13 @@
 @extends('layouts.app')
 @section('body')
 
+<div id="wrapper" class="clearfix">
+	
+	@yield('content')
+	
+</div>
 
-@yield('content')
+
 @include('layouts.nav')
 <div class="container clearfix">
 	<div class="row align-items-center col-mb-50">
@@ -21,12 +26,14 @@
 		<h3>Thank you for your interest to join Alive-Nigeria</h3>
 	</div>
 
-	<p> Our mission is to prepare Africa for the imminent return of Jesus Christ through biblical spiritual training and 
+	<p> 
+		Our mission is to prepare Africa for the imminent return of Jesus Christ through biblical spiritual training and 
 		evangelistic efforts. It is our goal to challenge African Seventh-day Adventist young adults to live a lifestyle 
 		of authentic biblical excellence, instill a missionary volunteer spirit in every African Seventh-day Adventist 
 		young adult, mobilize and support young adult missionary movements across Africa, create a meaningful 
 		impact in neglected areas, and finally change the continent of Africa by ushering in the imminent return of 
-		Jesus Christ.</p>
+		Jesus Christ.
+	</p>
 
 			<div>
 				<a href="{{url('membership_policy')}}" class="btn btn-danger topmargin-sm">Read Membershipship policies here</a>
@@ -37,7 +44,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+</div>
 
 			
 
