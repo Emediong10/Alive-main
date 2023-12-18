@@ -46,6 +46,7 @@ class Register extends Component
             'email'=>$this->email,
             'phone'=>$this->phone,
             'chapter_id'=>$this->chapter,
+            'password' =>\Hash::make($this->password)
             
         ]);
 

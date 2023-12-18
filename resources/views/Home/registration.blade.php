@@ -2,7 +2,7 @@
 @section('content')
 <div class="content-wrap">
    <div class="text-center">
-      <h2 class="text-capitalize">Complete The Following For to Continue</h2>
+      <h2 class="text-capitalize">Complete The Eligibility Form To Sign in </h2>
    </div>
     <livewire:register/>
 
