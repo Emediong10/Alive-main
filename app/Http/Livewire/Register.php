@@ -37,20 +37,9 @@ class Register extends Component
             'phone'=>'required|max:11|unique:users,phone',
          ]);
         //  dd($this->phone);
-         $this->user = User::create([
-            'firstname'=>$this->firstname,
-            'middlename'=>$this->middlename,
-            'lastname'=>$this->lastname,
-            'gender'=>$this->gender,
-            'dob'=>$this->dob,
-            'email'=>$this->email,
-            'phone'=>$this->phone,
-            'chapter_id'=>$this->chapter,
-            'password' =>\Hash::make($this->password)
-            
-        ]);
+      
 
-        $this->successMsg = "Saved";
+        // $this->successMsg = "Saved";
         $this->currentStep = 2;
     }
 
@@ -67,42 +56,22 @@ class Register extends Component
     {
         $this->validate([
             'monthly_outreach' => 'required',
-         ]);
+        //  ]);
          
-        if($this->monthly_outreach == 'yes')
-        {
-              $this->validate([
+        // if($this->monthly_outreach == 'yes')
+        // {
+            //   $this->validate([
                 'christian_standard'=>'required',
                 'attended_mission'=>'required',
                 'professional'=>'required',
                 'will_support'=>'required',
-
+                // 'monthly_outreach' => 'required',
             ]);
-
-            $answers=[
-                'monthly_outreach'=>$this->monthly_outreach,
-                // 'outreach'=> $this->outreach,
-                // 'outreach_experience'=> $this->outreach_experience,
-                'professional'=> $this->professional,
-                'attended_mission'=> $this->attended_mission,
-                // 'good_standing_adventist'=> $this->good_standing_adventist,
-                'will_support'=> $this->will_support,
-                'monthly_support'=> $this->monthly_support,
-                // 'monthly_amount'=> $this->monthly_amount,
-                // 'currency'=> $this->currency
-            ];
-
+        
         //    dd(json_encode($answers));
 
-            Application::create([
-                'answers'=>json_encode($answers),
-                'user_id'=>3,
-                'member_type_id'=>null,
-                'status'=>0
-               ]);
-               
 
-        }
+        
 
         $this->successMsg = "Saved";
         $this->currentStep = 3;
@@ -129,9 +98,48 @@ class Register extends Component
             'confirm_password' => 'required|same:password'
         ]);
 
+        
+        $answers=[
+            'monthly_outreach'=>$this->monthly_outreach,
+            'outreach'=> $this->outreach,
+            'outreach_experience'=> $this->outreach_experience,
+            'professional'=> $this->professional,
+            'attended_mission'=> $this->attended_mission,
+            'good_standing_adventist'=> $this->good_standing_adventist,
+            'will_support'=> $this->will_support,
+            'monthly_support'=> $this->monthly_support,
+            'monthly_amount'=> $this->monthly_amount,
+            'currency'=> $this->currency
+        ];
+
+
+        
+        $user = User::create([
+            'firstname'=>$this->firstname,
+            'middlename'=>$this->middlename,
+            'lastname'=>$this->lastname,
+            'gender'=>$this->gender,
+            'dob'=>$this->dob,
+            'email'=>$this->email,
+            'phone'=>$this->phone,
+            'chapter_id'=>$this->chapter,
+            'password' =>\Hash::make($this->password),
+            
           User::where('id',3)->update([
-             'password' =>\Hash::make($this->password),
+            //
+        ])
+
         ]);
+        Application::create([
+            // 'answers'=>json_encode($answers),
+            // 'user_id'=>3,
+            'answers'=>[$answers],
+            'user_id'=>$user->id,
+            'member_type_id'=>null,
+            'status'=>0
+           ]);
+           
+           
 
         // $this->user->assignRole('member');
         $this->successMsg = 'Thank you For filling the Form, You can now proceed to Sign in';
