@@ -99,8 +99,8 @@
                         <label for="detail">Select Your Chapter:</label>
                         <select name="chapter" class="form-control" wire:model="chapter">
                         <option value="">Select Your Chapter</option>
-                          @foreach($chapters as $chapter)
-                          <option value="{{$chapter->id}}">{{$chapter->name}}</option>
+                          @foreach($chapters as $chpt)
+                          <option value="{{$chpt->id}}">{{$chpt->name}}</option>
                           @endforeach
                         </select>
                         @error('chapter') <span class="error text-danger">{{ $message }}</span> @enderror
