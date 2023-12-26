@@ -17,12 +17,12 @@
 								<a href="{{ url('admin/login') }}" class="button button-large fw-semibold button-border button-rounded ls0 nott">Sign In</a><br>
 								<a href="{{ route('membership_policy') }}">Read Membership policies here <i class="icon-caret-right1 position-relative" style="top: 2px"></i></a>
 							</div>
+            <img src="assets/images/welcome2.png" alt="" class="slider-img parallax;"  data-400="margin-top:40px;adeInRight" style="border-radius: 15px; padding-left:60px; width: 500px;">
 						</div>
 					</div>
 				</div>
 
 			</div>
-            <img src="new/image/brooke-cagle--uHVRvDr7pg-unsplash.jpg" alt="" class="slider-img parallax" data-start="margin-top: 0px;" data-400="margin-top: 50px;" style="border-radius: 15px; padding-left:20px">
 		</section><!-- #Slider End -->
 
 		<!-- Content

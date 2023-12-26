@@ -1,60 +1,73 @@
 
+
 @include('layouts.app')
-@include('layouts.nav')
-<section id="content">
+{{-- @include('layouts.nav') --}}
+
+<!-- #top-bar end -->
+
+		<header id="header" class="transparent-header floating-header header-size-md">
+			<div id="header-wrap">
+				{{-- <div class="container"> --}}
+					<div class="header-row">
+			<div class="header-wrap-clone"></div>
+
+				
+
+					</div>
+				</div>
+			{{-- </div> --}}
+		</header>
+
+		<section id="page-title" class="page-title-parallax page-title-center page-title-dark include-header" style="background-image: linear-gradient(to top, rgba(254,150,3,0.5), #39384D), url('assets/demos/seo/images/faqs-title.jpg'); background-size: cover; padding: 120px 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+			<div id="particles-line"></div>
+
+			<div class="container clearfix mt-4">
+				<h1>ALIVE-NIGERIA MEMBERSHIP POLICIES </h1>
+				<br>
+				<div class="badge rounded-pill border border-light text-light">These are our standards for Christian living. Our position on several topics is outlined in the paragraphs below.</div>
+			</div>
+
+</section>
+
+<section id="slider" class=" " style="background: url('new/demos/crowdfunding/images/hero.svg') no-repeat center bottom / cover;">
+
 			<div class="content-wrap">
 				<div class="container clearfix">
-               <div class="center">
-                <h1>MEMBERSHIP POLICIES</h1>
-                </div>
-					<div id="faqs" class="faqs">
-                        
+				<div class="slider-title">
+              
+					<div class="row col-mb-50, col-sm-3, center">
 
-						<h3> APPENDIX 1: Membership Standards</h3>
 
-                    
-            <h4>These are our standards for Christian living. Our position on several topics is outlined in the paragraphs below. </h4>
+					{{-- <div class="row clearfix"> --}}
 
-						<div class="divider"><i class="icon-circle"></i></div>
-
-						<div class="row col-mb-50">
-							<div class="col-md-6">
-
-								<h4 id="faq-1">Salvation by Faith</h4>
-								<p>Salvation is granted to us as a free gift, made possible by the death and resurrection of Jesus. We can do 
-nothing to earn it through our behaviour and deeds; we must simply accept His sacrifice. <br>
+<div class="toggle toggle-bg" data-animate="fadeIn">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold"> Salvation by Faith </h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom">Salvation is granted to us as a free gift, made possible by the death and resurrection of Jesus. We can do 
+nothing to earn it through our behaviour and deeds; we must simply accept His sacrifice. 
 All that we can possibly do to ensure our own salvation is to accept the invitation God has given us. (Seventh-day Adventist Bible Commentary, vol. 6, p. 1071) Christ has made the atonement in our behalf, and no act or 
 service on our part can erase a single stain from our own robes. Only accepting the robe of righteousness 
-cleansed in the blood of Jesus will enable us to stand faultless before God, justified by faith alone.</p>
+cleansed in the blood of Jesus will enable us to stand faultless before God, justified by faith alone.
+		</div>
+				</div>
 
-								<div class="line"></div>
-
-								<h4 id="faq-2"><strong>Q.</strong> Relating to God</h4>
-								<p>To remain spiritually alive, we need spiritual food. Without daily devotional Bible study and prayer, we will fall 
-from the narrow path and lose our connection with God. <br>
-We joyfully accept a Substitute willing to bear the death our sins demand, and we marvel at that grace that 
-can “keep us from falling and present us faultless before the presence of His glory.” (Jude 24) But that, of itself, 
-is not enough. “Spiritual life [must be] maintained by spiritual food. The habit of devotional Bible study and 
-prayer must be maintained if we are to perfect holiness.</p>
-
-					
-
-								<div class="line"></div>
-
-								<h4 id="faq-4"> Relating to Each Other</h4>
-								<p>Just as Christ loved us more than Himself, so we are to put others before ourselves. We work toward the 
-salvation of those around us, unmindful of any sacrifice necessary on our part.
-</p>
-
-								<p>“We should love and respect one another, notwithstanding the faults and imperfections that we cannot help 
-seeing” (Steps to Christ, p. 121). The stricter the standards we adopt, the greater the hypocrisy if we do not, 
-with the utmost care and tender regard, uphold one another.</p>
-
-
-								<div class="line"></div>
-
-								<h4 id="faq-6"> Sabbath Keeping</h4>
-								<p class="mb-0">Sabbath is a gift from God, a memorial of His creative powers and a foretaste of heaven. On the Sabbath, we 
+			
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold">  Sabbath Keeping </h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom">Sabbath is a gift from God, a memorial of His creative powers and a foretaste of heaven. On the Sabbath, we 
 set aside the cares of the world, and enter into spiritual rest with our Creator.</p>
 <p>At the end of creation week, the Lord brought forth His crowning act—Adam. But Adam did not enter this world 
 labouring, he entered life through rest (the Sabbath). Here God presented him the world as a gift. Likewise, 
@@ -62,38 +75,54 @@ we enter eternal life through rest, not works. “The whole work is the Lord’s
 Signs of the Times, March 6, 1893). “There remains therefore a rest (keeping of a sabbath, margin) for the 
 people of God. For he who has entered His rest has himself also ceased from his works as God did from His. 
 Let us therefore be diligent to enter that rest, lest anyone fall…” (Hebrews 4:9-11). We can’t but fall, if we don’t 
-know to enter into His rest by ceasing from our own works</p>
+know to enter into His rest by ceasing from our own works
+		</div>
+				</div>
+
+		
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold">  Relating to Each Other </h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom">Just as Christ loved us more than Himself, so we are to put others before ourselves. We work toward the 
+salvation of those around us, unmindful of any sacrifice necessary on our part.
+<br>“We should love and respect one another, notwithstanding the faults and imperfections that we cannot help 
+seeing” (Steps to Christ, p. 121). The stricter the standards we adopt, the greater the hypocrisy if we do not, 
+with the utmost care and tender regard, uphold one another.
+		</div>
+				</div>
 
 
-<h4 id="faq-7"> Reverence in Worship</h4>
-								<p>As we worship our omnipotent Savior, a sense of awe overcomes us. Our steps, our voices, and our thoughts 
-reflect a spirit of humility and reverence.</p>
-<p>Christians who have any sense of God’s omnipotence, His holiness, and His love will always and under all 
-circumstances manifest a spirit of deep reverence for Him, His word, and His worship. “Humility and reverence 
-should characterize the deportment of all who come into the presence of God” (Patriarchs and Prophets, p. 
-252). They will recognize that “the hour and place of prayer are sacred, because God is there” (Gospel 
-Workers, p. 178). <br><br>
-“The Lord is in His holy temple: let all the earth keep silence before Him” (Habakkuk 2:20).</p>
-
-
-<h4 id="faq-8"> Health and Temperance</h4>
-								<p>Our bodies are the Holy Spirit’s temples, and it is our duty to take care of them. Good health allows us to live 
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold">Health and Temperance</h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom">	Our bodies are the Holy Spirit’s temples, and it is our duty to take care of them. Good health allows us to live 
 longer, more effective, and more enjoyable lives and keeps our minds running clearly so that we can best 
 represent our Creator.
-</p>
-<p>We advocate the eight natural principles for whole health—nutrition, exercise, water, sunshine, temperance, 
-air, rest, and trust in God.</p>
-<p>“God has given us great light on the principles of health, and modern scientific research has abundantly verified 
+
+We advocate the eight natural principles for whole health—nutrition, exercise, water, sunshine, temperance, 
+air, rest, and trust in God.
+“God has given us great light on the principles of health, and modern scientific research has abundantly verified 
 these principles” (Seventh-day Adventist Church Manual, p. 146). We are warned that those “who choose to 
 follow their own preferences in this matter, eating and drinking as they please, will gradually grow careless of 
 the instruction the Lord has given regarding other phases of the present truth and will lose their perception of 
-what is truth” (Counsels on Diet and Foods, p. 402).</p>
-<h5>The Spirit of Prophecy gives us some specific guidelines</h5>
+what is truth” (Counsels on Diet and Foods, p. 402). The Spirit of Prophecy gives us some specific guidelines
 <p>To know the best foods, we must study God’s original plan for man’s diet. “Grains, fruits, nuts, and vegetables 
 constitute the diet chosen for us by our Creator. These foods, prepared in as simple and natural a manner as 
 possible, are the most healthful and nourishing. They impart a strength, a power of endurance, and a vigor of 
-intellect, that are not afforded by a more complex and stimulating diet” (Counsels on Diet and Foods, p. 81).
-</p>
+intellect, that are not afforded by a more complex and stimulating diet” (Counsels on Diet and Foods, p. 81).</p>
+
 <p>“Diet reform should be progressive. [For example,] as disease in animals increases, the use of milk and eggs 
 will become more and more unsafe. An effort should be made to supply their place with other things that are 
 healthful and inexpensive” (The Ministry of Healing, p. 320).</p>
@@ -106,12 +135,19 @@ a sin. (Romans 14:22, 23)
 <p>'Abstain from fleshly lusts, which war against the soul,’ is the language of the apostle Peter…It is a most 
 forcible warning against the use of such stimulants and narcotics as tea, coffee, tobacco, alcohol, and 
 morphine” (Counsels on Diet and Foods, p. 62).</p>
+		</div>
+				</div>
 
-
-<div class="line"></div>
-
-<h4 id="faq-10"> Dress</h4>
-<p>Modesty and simplicity with good taste are to characterize our attire. We are representatives of Christ, not 
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold">Dress</h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom"><p>Modesty and simplicity with good taste are to characterize our attire. We are representatives of Christ, not 
 slaves to the latest trends</p>
 <p>True religion captivates the whole person, heart, mind, and soul. The person then becomes a “new creature; 
 old things have passed away; behold, all things have become new” (2 Corinthians 5:17). And, when confronted 
@@ -129,10 +165,18 @@ Our attire should be characterized by “the grace, the beauty, the appropriaten
 <p>Finally, we must know that our characters are revealed by the styles we adopt. “I saw,” says Ellen White, “that 
 the outside appearance is an index to the heart” (Testimonies for the Church, vol. 1, p. 135). And she warns,“obedience to fashion is pervading our Seventh-day Adventist churches and is doing more than any other 
 power to separate our people from God” (Testimonies for the Church, vol. 4, p. 647).</p>
-
-
-<h4 id="faq-11">Simplicity</h4>
-<p class="mb-0">As Christians, our goal is to uplift Christ in all that we do, not by showy distractions, but by clearly presented 
+		</div>
+				</div>
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold">Simplicity</h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">As Christians, our goal is to uplift Christ in all that we do, not by showy distractions, but by clearly presented 
 love and truth. Extravagant displays serve only to mask an inner lack of confidence and assurance, but a life 
 at peace in God will shine on its own.</p>
 <p>Simplicity characterizes the life at rest in Christ. Insecurity, on the other hand, makes up by pomp and show 
@@ -141,15 +185,19 @@ what it lacks in inner power and self-assurance. By display and ostentation it h
 a peasant’s home…[and] identifying Himself with the world’s unknown toilers” (Education, p. 77). diminished 
 by nothing the force of His true being and self-worth.</p><p>“In harmony with these principles, simplicity and economy should characterize our graduating exercises, the 
 weddings in our churches, and all other church services” (Seventh-day Adventist Church Manual, p. 148).</p>
+		</div>
+				</div>
 
-</div>
-
-							<div class="col-md-6">
-
-                          
-
-<h4 id="faq-11"> Reading</h4>
-<p class="mb-0">What we put into our brains is what we become. Reading material must be selected carefully, based on the 
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold">  Reading</h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">What we put into our brains is what we become. Reading material must be selected carefully, based on the 
 standards laid out in Philippians 4:8: “Finally, brethren, whatever things are true, whatever things are noble, 
 whatever things are just, whatever things are pure, whatever things are lovely, whatever things are of good 
 report; if there is any virtue, and if there is anything praiseworthy—meditate on these things.”</p>
@@ -165,11 +213,21 @@ end” (Ecclesiastes 12:12). And notwithstanding the educational value in some o
 it is mostly a blend of ideas picked from the tree of good and evil. And the Lord admonishes us not to “[create] 
 a distaste for life’s practical duties” (Counsels to Parents, Teachers, and Students, p. 383) by the reading of 
 that which is fictitious, romantic, or nonessential</p>
+		</div>
+				</div>
 
-<div class="line"></div>
 
-<h4 id="faq-11">Electronic Media</h4>
-<p class="mb-0">Radio and television, like books, are valuable resources, but we must carefully select the things we listen to 
+
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold">  Electronic Media</h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">Radio and television, like books, are valuable resources, but we must carefully select the things we listen to 
 and watch.
 </p>
 <p>Nothing educates the masses faster or more thoroughly than the medium of radio and television. Unfortunately, 
@@ -188,11 +246,21 @@ is led to forget God and lose sight of eternal interests, there Satan is binding
 (Patriarchs and Prophets, p. 459).
 It must also be recognized that any activity which fosters rivalry rather than loving cooperation is an offense to 
 God, for its tendency is to strain the tender relationships we enjoy one with another.</p>
+		</div>
+				</div>
+ 
 
-<div class="line"></div>
 
-<h4 id="faq-11"> Music</h4>
-<p class="mb-0">Music is one of the most debated topics. Meant for our enjoyment and enhancement, it has been debased to 
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold">Music </h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">Music is one of the most debated topics. Meant for our enjoyment and enhancement, it has been debased to 
 the point where we must exercise the utmost care as we select the songs we listen to and perform. We seek 
 out music that leads us closer to God without taking control of our emotions.
 </p> <p>“Music was made to serve a holy purpose, to lift the thoughts to that which is pure, noble, and elevating, and 
@@ -201,11 +269,18 @@ with heaven in song.” (The Desire of Ages, p. 73)</p> <p>“Music is one of th
 finest qualities. God often has used spiritual songs to touch the hearts of sinners and lead to repentance” 
 (Seventh-day Adventist Church Manual, p. 149). But like everything else, music has been debased for the 
 purpose of destroying the fine rhythms of the soul and for the breaking down of morality.</p>
-
-<div class="line"></div>
-
-<h4 id="faq-11"> Social Relationships</h4>
-<p class="mb-0">Friendship and fellowship are important to our whole wellbeing. We enjoy interacting, keeping in mind that 
+		</div>
+				</div>
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+		<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold"> Social Relationships </h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">Friendship and fellowship are important to our whole wellbeing. We enjoy interacting, keeping in mind that 
 each communication is an opportunity for growth and for giving glory to God. <br><br>
 “God gives us the social instinct for our pleasure and benefit. ‘by mutual contact minds receive polish and 
 refinement; by social intercourse, acquaintances are formed and friendships contracted which result in a unity 
@@ -215,11 +290,19 @@ protection. It is the purpose of Satan to pervert every good thing, and the perv
 that which is worst” (Testimonies for the Church, vol. 6, p. 172) (---------------Seventh-day Adventist Church 
 Manual, p. 151).
 </p>
+		</div>
+				</div>
 
-<div class="line"></div>
-
-<h4 id="faq-11"> Courtship and Marriage</h4>
-<p class="mb-0">Within marriage we can experience a taste of God’s relationship to us. However, as we seek a partner for life, 
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold"> Courtship and Marriage </h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">Within marriage we can experience a taste of God’s relationship to us. However, as we seek a partner for life, 
 we must not be guided by misleading emotions. Entering into this relationship is a process to be enjoyed, but 
 it is also a process requiring much prayer, guidance, and the highest level of self-discipline.
 </p> <p>Because the natural attraction between men and women is so strong, it often plays into the hands of the 
@@ -248,11 +331,19 @@ taught, and you will be saved many a heartache” (Messages to Young People, p. 
 Marriage “was designed to be a blessing to mankind. And it is a blessing wherever the marriage covenant is 
 entered into intelligently, in the fear of God, and with due consideration for its responsibilities” (The Adventist 
 Home, p. 18).</p>
+		</div>
+				</div>
 
-<div class="line"></div>
-
-<h4 id="faq-11"><strong>Q.</strong> How do I pay for items on the Marketplaces?</h4>
-<p class="mb-0">LChrist is the center of our education. He is the One who created all that we study, and a greater knowledge 
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold"> Christ is the center of our education </h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom"><p class="mb-0"> He is the One who created all that we study, and a greater knowledge 
 and understanding of Him and His works leaves us better prepared to present Him to the unbelieving. <br><br>
 No education is worthy of the name if He “in Whom are hidden all the treasures of wisdom and knowledge” is 
 left out (Colossians 2:3).</p>
@@ -269,25 +360,41 @@ Jesus educates through nature, useful work, and the experiences of life: “[Jes
 directly from Heaven-appointed sources; from useful work, from the study of the Scriptures and of nature, and 
 from the experiences of life—God’s lesson books, full of instruction to all who bring to them the willing hand, 
 the seeing eye, and the understanding heart” (Education, p. 77).</p>
+		</div>
+				</div>
 
-<div class="line"></div>
 
-<h4 id="faq-11"> Conclusion</h4>
-<p class="mb-0">God has provided us with instructions for our lifestyle that, when applied, give us healthier and happier lives. 
+<div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
+								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-icon">
+				<i class="icon-line-circle-plus"></i>
+			</div>
+			<div class="toggle-title">
+				<h1 class="font-bold">  Conclusion </h1>
+			</div>
+		</div>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">God has provided us with instructions for our lifestyle that, when applied, give us healthier and happier lives. 
 Based on that instruction, these standards are set, not as a rulebook, but as an expression of the heart, of our 
 faith in Christ and our commitment to Him. They are vital as we consider the tri-fold aspect of our personality—
 mental, physical, and spiritual—realizing that how we live affects our spiritual experience as well as our 
 representation of Christ to those around us</p>
+		</div>
+				</div>
 
 
 
 
-							</div>
+
+
+
                         
+						</div>
+						</div>
 						</div>
 
 					</div>
+					
 
 				</div>
-			</div>
+			
 		</section>
