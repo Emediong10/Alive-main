@@ -19,6 +19,7 @@ class Register extends Component
     public function render()
     {
         $this->chapters = Chapter::where('active',1)->get();
+        //dd($this->chapters);
         return view('livewire.register');
     }
 
@@ -140,6 +141,7 @@ class Register extends Component
            ]);
            
            
+
 
         // $this->user->assignRole('member');
         $this->successMsg = 'Thank you For filling the Form, You can now proceed to Sign in';
