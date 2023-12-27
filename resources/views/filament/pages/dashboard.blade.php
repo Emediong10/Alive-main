@@ -11,10 +11,10 @@
     <!--If licence is yet to be submitted -->
         @if(is_null($licence->is_approved))
             <div>
-                <div class="text-center p-4 rounded" style="background-color: rgb(236, 131, 131); color:white; font-size:22px">
+           <div class="text-center p-4 rounded" style="background-color: rgb(236, 131, 131); color:white; font-size:22px">
                 <a href="{{ url('admin/update-profile') }}">
                     Click here to update your Details
-                    </a>
+                    </a> 
 
                 </div>
             </div>
@@ -35,9 +35,17 @@
             </div> --}}
         @endif
     @else
-        <div class="text-center p-4 rounded" style="background-color: rgb(236, 131, 131); color:white; font-size:22px">
+ <h5 style="font-size:22px; font-bold" class="center"> IMPORTANT!</h5> 
+   <div >
+<p> If you are unsure of your spiritual gifts, click below to complete the Spiritual Gifts test.
+  Take note of your first 3 Spiritual gifts.
+ </div>
+<div class="text-center p-4 rounded" style="background-color:rgb(255, 0, 0); color:white; font-size:22px"><a href="http://spiritualgiftstest.com/spiritual-gifts/">Click here to take Your Spiritual Gift Test</a></div> </p>
+<p>Return here to complete the registration  process.</p>
+{{-- <p>4. Now Click below to update your details</p> --}}
+        <div class="text-center p-4 rounded" style="background-color: rgb(236, 131, 131); color:white; font-size:22px;">
             <a href="{{ url('admin/update-profile') }}">
-            Click here to update your Details
+           Now you can click here to update your Details
             </a>
 
         </div>
