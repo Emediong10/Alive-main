@@ -364,7 +364,7 @@ the seeing eye, and the understanding heart” (Education, p. 77).<br>
 		</div>
 		<div class="toggle-content rounded-bottom"><br>God has provided us with instructions for our lifestyle that, when applied, give us healthier and happier lives. Based on that instruction, these standards are set, not as a rulebook, but as an expression of the heart, of our faith in Christ and our commitment to Him. They are vital as we consider the tri-fold aspect of our personality—
 mental, physical, and spiritual—realizing that how we live affects our spiritual experience as well as our 
-representation of Christ to those around us .<br>
+representation of Christ to those around us.<br>
 		</div>
 				</div>  
 					</div>
