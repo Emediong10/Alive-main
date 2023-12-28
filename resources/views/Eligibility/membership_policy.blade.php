@@ -297,7 +297,7 @@ it is also a process requiring much prayer, guidance, and the highest level of s
 <br> <br>Because the natural attraction between men and women is so strong, it often plays into the hands of the 
 enemy. History is replete with the stories of men and women, of otherwise faultless deportment, who have 
 been overthrown by some subtle, seductive appeal from the opposite gender. ”Therefore let him who thinks 
-he stands take heed lest he fall” (1 Corinthians 10:12).<br> <br>“Satan is busily engaged in influencing those who are wholly unsuited to each other to unite their interests. He 
+he stands take heed lest he fall” (1 Corinthians 10:12). <br> <br>“Satan is busily engaged in influencing those who are wholly unsuited to each other to unite their interests. He 
 exults in this work, for by it he can produce more misery and hopeless woe to the human family than by 
 exercising his skill in any other direction” (Messages to Young People, p. 455).<br><br>As a matter of fact, “the majority of the marriages of our time, and the way in which they are conducted, make 
 them one of the signs of the last days. Men and women are so persistent, so headstrong, that God is left out 
