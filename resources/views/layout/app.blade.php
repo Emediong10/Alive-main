@@ -79,7 +79,7 @@
 		<!-- Header
 		============================================= -->
 		@include('layouts.nav')
-		<br><br>
+		<br><br><br>
 
         @yield('content')
 
