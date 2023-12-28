@@ -18,7 +18,7 @@
 			{{-- </div> --}}
 		</header>
 
-		<section id="page-title" class="page-title-parallax page-title-center page-title-dark include-header" style="background-image: linear-gradient(to top, rgba(254,150,3,0.5), #39384D), url('assets/demos/seo/images/faqs-title.jpg'); background-size: cover; padding: 120px 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+		<section id="page-title" class="page-title-parallax page-title-center page-title-dark include-header" style="background-image: linear-gradient(to top, rgba(254,150,3,0.5), #39384D), url('new/image/metal-ruler-2765212_1280.jpg'); background-size: cover; padding: 120px 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 			<div id="particles-line"></div>
 
 			<div class="container clearfix mt-4">
@@ -49,8 +49,7 @@
 				<h1 class="font-bold"> Salvation by Faith </h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom">Salvation is granted to us as a free gift, made possible by the death and resurrection of Jesus. We can do 
-nothing to earn it through our behaviour and deeds; we must simply accept His sacrifice. 
+		<div class="toggle-content rounded-bottom">Salvation is granted to us as a free gift, made possible by the death and resurrection of Jesus. We can do nothing to earn it through our behaviour and deeds; we must simply accept His sacrifice. 
 All that we can possibly do to ensure our own salvation is to accept the invitation God has given us. (Seventh-day Adventist Bible Commentary, vol. 6, p. 1071) Christ has made the atonement in our behalf, and no act or 
 service on our part can erase a single stain from our own robes. Only accepting the robe of righteousness 
 cleansed in the blood of Jesus will enable us to stand faultless before God, justified by faith alone.
@@ -67,8 +66,7 @@ cleansed in the blood of Jesus will enable us to stand faultless before God, jus
 				<h1 class="font-bold">  Sabbath Keeping </h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom">Sabbath is a gift from God, a memorial of His creative powers and a foretaste of heaven. On the Sabbath, we 
-set aside the cares of the world, and enter into spiritual rest with our Creator.</p>
+		<div class="toggle-content rounded-bottom">Sabbath is a gift from God, a memorial of His creative powers and a foretaste of heaven. On the Sabbath, we set aside the cares of the world, and enter into spiritual rest with our Creator.</p>
 <p>At the end of creation week, the Lord brought forth His crowning act—Adam. But Adam did not enter this world 
 labouring, he entered life through rest (the Sabbath). Here God presented him the world as a gift. Likewise, 
 we enter eternal life through rest, not works. “The whole work is the Lord’s from the beginning to the end” (The 
@@ -89,8 +87,7 @@ know to enter into His rest by ceasing from our own works
 				<h1 class="font-bold">  Relating to Each Other </h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom">Just as Christ loved us more than Himself, so we are to put others before ourselves. We work toward the 
-salvation of those around us, unmindful of any sacrifice necessary on our part.
+		<div class="toggle-content rounded-bottom">Just as Christ loved us more than Himself, so we are to put others before ourselves. We work toward the Salvation of those around us, unmindful of any sacrifice necessary on our part.
 <br>“We should love and respect one another, notwithstanding the faults and imperfections that we cannot help 
 seeing” (Steps to Christ, p. 121). The stricter the standards we adopt, the greater the hypocrisy if we do not, 
 with the utmost care and tender regard, uphold one another.
@@ -107,8 +104,7 @@ with the utmost care and tender regard, uphold one another.
 				<h1 class="font-bold">Health and Temperance</h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom">	Our bodies are the Holy Spirit’s temples, and it is our duty to take care of them. Good health allows us to live 
-longer, more effective, and more enjoyable lives and keeps our minds running clearly so that we can best 
+		<div class="toggle-content rounded-bottom">	Our bodies are the Holy Spirit’s temples, and it is our duty to take care of them. Good health allows us to live longer, more effective, and more enjoyable lives and keeps our minds running clearly so that we can best 
 represent our Creator.
 
 We advocate the eight natural principles for whole health—nutrition, exercise, water, sunshine, temperance, 
@@ -147,8 +143,7 @@ morphine” (Counsels on Diet and Foods, p. 62).</p>
 				<h1 class="font-bold">Dress</h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom"><p>Modesty and simplicity with good taste are to characterize our attire. We are representatives of Christ, not 
-slaves to the latest trends</p>
+		<div class="toggle-content rounded-bottom"><p>Modesty and simplicity with good taste are to characterize our attire. We are representatives of Christ, not slaves to the latest trends</p>
 <p>True religion captivates the whole person, heart, mind, and soul. The person then becomes a “new creature; 
 old things have passed away; behold, all things have become new” (2 Corinthians 5:17). And, when confronted 
 with a world of changing customs, where fashions are suited to prideful display, he/she recoils because of new 
@@ -176,9 +171,7 @@ power to separate our people from God” (Testimonies for the Church, vol. 4, p.
 				<h1 class="font-bold">Simplicity</h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom"><p class="mb-0">As Christians, our goal is to uplift Christ in all that we do, not by showy distractions, but by clearly presented 
-love and truth. Extravagant displays serve only to mask an inner lack of confidence and assurance, but a life 
-at peace in God will shine on its own.</p>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">As Christians, our goal is to uplift Christ in all that we do, not by showy distractions, but by clearly presented love and truth. Extravagant displays serve only to mask an inner lack of confidence and assurance, but a life at peace in God will shine on its own.</p>
 <p>Simplicity characterizes the life at rest in Christ. Insecurity, on the other hand, makes up by pomp and show 
 what it lacks in inner power and self-assurance. By display and ostentation it hopes to command respect, but 
 “to all this the life of Jesus presented a marked contrast…[Being] born amidst surroundings the rudest, sharing 
@@ -194,11 +187,10 @@ weddings in our churches, and all other church services” (Seventh-day Adventis
 				<i class="icon-line-circle-plus"></i>
 			</div>
 			<div class="toggle-title">
-				<h1 class="font-bold">  Reading</h1>
+				<h1 class="font-bold"> Reading</h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom"><p class="mb-0">What we put into our brains is what we become. Reading material must be selected carefully, based on the 
-standards laid out in Philippians 4:8: “Finally, brethren, whatever things are true, whatever things are noble, 
+		<div class="toggle-content rounded-bottom"><p class="mb-0">What we put into our brains is what we become. Reading material must be selected carefully, based on the standards laid out in Philippians 4:8: “Finally, brethren, whatever things are true, whatever things are noble, 
 whatever things are just, whatever things are pure, whatever things are lovely, whatever things are of good 
 report; if there is any virtue, and if there is anything praiseworthy—meditate on these things.”</p>
 <p>“The mind…is built up by that upon which it feeds; and it rests with us to determine upon what it shall be fed” 
@@ -224,12 +216,10 @@ that which is fictitious, romantic, or nonessential</p>
 				<i class="icon-line-circle-plus"></i>
 			</div>
 			<div class="toggle-title">
-				<h1 class="font-bold">  Electronic Media</h1>
+				<h1 class="font-bold"> Electronic Media</h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom"><p class="mb-0">Radio and television, like books, are valuable resources, but we must carefully select the things we listen to 
-and watch.
-</p>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">Radio and television, like books, are valuable resources, but we must carefully select the things we listen to and watch.</p>
 <p>Nothing educates the masses faster or more thoroughly than the medium of radio and television. Unfortunately, 
 most of the programming is not supplied with heaven in mind. So “if we are not discriminating, [radio and 
 television] will bring sordid programs right into our homes.”</p><p>“Safety for ourselves and our children is found in a determination, by God’s help, to follow the admonition of 
@@ -271,6 +261,7 @@ finest qualities. God often has used spiritual songs to touch the hearts of sinn
 purpose of destroying the fine rhythms of the soul and for the breaking down of morality.</p>
 		</div>
 				</div>
+
 <div class="toggle toggle-bg" data-animate="fadeIn" data-delay="200">
 		<div class="toggle-header rounded-top fw-normal flex-row-reverse">
 	<div class="toggle-icon">
@@ -280,8 +271,7 @@ purpose of destroying the fine rhythms of the soul and for the breaking down of 
 				<h1 class="font-bold"> Social Relationships </h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom"><p class="mb-0">Friendship and fellowship are important to our whole wellbeing. We enjoy interacting, keeping in mind that 
-each communication is an opportunity for growth and for giving glory to God. <br><br>
+		<div class="toggle-content rounded-bottom"><p class="mb-0">Friendship and fellowship are important to our whole wellbeing. We enjoy interacting, keeping in mind that each communication is an opportunity for growth and for giving glory to God. <br><br>
 “God gives us the social instinct for our pleasure and benefit. ‘by mutual contact minds receive polish and 
 refinement; by social intercourse, acquaintances are formed and friendships contracted which result in a unity 
 of heart and an atmosphere of love which is pleasing in the sight of heaven.’…Such associations should be 
@@ -302,8 +292,7 @@ Manual, p. 151).
 				<h1 class="font-bold"> Courtship and Marriage </h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom"><p class="mb-0">Within marriage we can experience a taste of God’s relationship to us. However, as we seek a partner for life, 
-we must not be guided by misleading emotions. Entering into this relationship is a process to be enjoyed, but 
+		<div class="toggle-content rounded-bottom"><p class="mb-0">Within marriage we can experience a taste of God’s relationship to us. However, as we seek a partner for life, we must not be guided by misleading emotions. Entering into this relationship is a process to be enjoyed, but 
 it is also a process requiring much prayer, guidance, and the highest level of self-discipline.
 </p> <p>Because the natural attraction between men and women is so strong, it often plays into the hands of the 
 enemy. History is replete with the stories of men and women, of otherwise faultless deportment, who have 
@@ -370,31 +359,18 @@ the seeing eye, and the understanding heart” (Education, p. 77).</p>
 				<i class="icon-line-circle-plus"></i>
 			</div>
 			<div class="toggle-title">
-				<h1 class="font-bold">  Conclusion </h1>
+				<h1 class="font-bold">Conclusion </h1>
 			</div>
 		</div>
-		<div class="toggle-content rounded-bottom"><p class="mb-0">God has provided us with instructions for our lifestyle that, when applied, give us healthier and happier lives. 
-Based on that instruction, these standards are set, not as a rulebook, but as an expression of the heart, of our 
-faith in Christ and our commitment to Him. They are vital as we consider the tri-fold aspect of our personality—
+		<div class="toggle-content rounded-bottom"><p class="mb-0">God has provided us with instructions for our lifestyle that, when applied, give us healthier and happier lives. Based on that instruction, these standards are set, not as a rulebook, but as an expression of the heart, of our faith in Christ and our commitment to Him. They are vital as we consider the tri-fold aspect of our personality—
 mental, physical, and spiritual—realizing that how we live affects our spiritual experience as well as our 
 representation of Christ to those around us</p>
 		</div>
-				</div>
-
-
-
-
-
-
-
-                        
-						</div>
-						</div>
-						</div>
-
+				</div>  
 					</div>
-					
+						</div>
+							</div>
 
-				</div>
-			
-		</section>
+						</div>
+					</div>
+			</section>
