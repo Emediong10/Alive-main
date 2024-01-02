@@ -3,20 +3,6 @@
 @include('layouts.app')
 {{-- @include('layouts.nav') --}}
 
-<!-- #top-bar end -->
-
-		<header id="header" class="transparent-header floating-header header-size-md">
-			<div id="header-wrap">
-				{{-- <div class="container"> --}}
-					<div class="header-row">
-			<div class="header-wrap-clone"></div>
-
-				
-
-					</div>
-				</div>
-			{{-- </div> --}}
-		</header>
 
 		<section id="page-title" class="page-title-parallax page-title-center page-title-dark include-header" style="background-image: linear-gradient(to top, rgba(254,150,3,0.5), #39384D), url('new/image/metal-ruler-2765212_1280.jpg'); background-size: cover; padding: 120px 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 			<div id="particles-line"></div>
@@ -24,28 +10,26 @@
 			<div class="container clearfix mt-4">
 				<h1>ALIVE-NIGERIA MEMBERSHIP POLICIES </h1>
 				<br>
-				<div class="badge rounded-pill border border-light text-light">These are our standards for Christian living. Our position on several topics is outlined in the paragraphs below.</div>
+				<p class="rounded-pill border border-light text-light">These are our standards for Christian living. Our position on several topics is outlined in the paragraphs below.
+				</p>
 			</div>
-
 </section>
 
-<section id="slider" class="#" style="background: url('new/image/leaf-409258_1280.jpg') no-repeat center bottom / cover; color: white;">
+<section id="slider" class="" style="background: url('new/image/leaf-409258_1280.jpg') no-repeat center bottom / cover; color: white;">
 
 			<div class="content-wrap" style="color: white;">
 				<div class="container clearfix">
 				<div class="slider-title">
               
-					<div class="row col-mb-50, col-sm-3, center">
+					<div class="row col-mb-30, col-sm-3, center">
 
-
-					{{-- <div class="row clearfix"> --}}
 
 <div class="toggle toggle-bg" data-animate="fadeIn">
-								<div class="toggle-header rounded-top fw-normal flex-row-reverse">
+	<div class="toggle-header rounded-top fw-normal flex-row-reverse">
 	<div class="toggle-icon">
 				<i class="icon-line-circle-plus"></i>
 			</div>
-			<div class="toggle-title">
+			<div  class="toggle-title fw-semibold ps-1">
 				<h1 class="font-bold"> Salvation by Faith </h1>
 			</div>
 		</div>
@@ -297,7 +281,7 @@ it is also a process requiring much prayer, guidance, and the highest level of s
 <br> <br>Because the natural attraction between men and women is so strong, it often plays into the hands of the 
 enemy. History is replete with the stories of men and women, of otherwise faultless deportment, who have 
 been overthrown by some subtle, seductive appeal from the opposite gender. ”Therefore let him who thinks 
-he stands take heed lest he fall” (1 Corinthians 10:12). <br> <br>“Satan is busily engaged in influencing those who are wholly unsuited to each other to unite their interests. He 
+he stands take heed lest he fall” (1 Corinthians 10:12).<br> <br>“Satan is busily engaged in influencing those who are wholly unsuited to each other to unite their interests. He 
 exults in this work, for by it he can produce more misery and hopeless woe to the human family than by 
 exercising his skill in any other direction” (Messages to Young People, p. 455).<br><br>As a matter of fact, “the majority of the marriages of our time, and the way in which they are conducted, make 
 them one of the signs of the last days. Men and women are so persistent, so headstrong, that God is left out 
@@ -374,3 +358,5 @@ representation of Christ to those around us.<br>
 						</div>
 					</div>
 			</section>
+
+		
