@@ -215,23 +215,27 @@
                                 <option value="USD">United States Dollars</option>
                             </select>
                         @error('currency') <span class="error text-danger">{{ $message }}</span> @enderror
+                    </div>
+                        @if ($monthly_amount >='6000')
+                        
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="password">Create Password:</label>
+                                <input type="password" id="password" wire:model="password" class="form-control" placeholder="Create a password">
+                                @error('password') <span class="error text-danger">{{ $message }}</span> @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="password_confirmation">Confirm Password:</label>
+                                <input type="password" id="password_confirm" wire:model="confirm_password" class="form-control" placeholder="Confirm your password">
+                                @error('confirm_password') <span class="error text-danger">{{ $message }}</span> @enderror
+                            </div>
                         </div>
+                      
+                       @endif
                         @endif
                         
-                       
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="password">Create Password:</label>
-                            <input type="password" id="password" wire:model="password" class="form-control" placeholder="Create a password">
-                            @error('password') <span class="error text-danger">{{ $message }}</span> @enderror
-                        </div>
-                        <div class="form-group">
-                            <label for="password_confirmation">Confirm Password:</label>
-                            <input type="password" id="password_confirm" wire:model="confirm_password" class="form-control" placeholder="Confirm your password">
-                            @error('confirm_password') <span class="error text-danger">{{ $message }}</span> @enderror
-                        </div>
-                   </div>
+                      </div>
+                    
                 </div>
                 <div class="col-md-12 text-right mb-5 mt-3">
                     <button class="btn btn-danger nextBtn btn-lg pull-right" type="button" wire:click="back(2)">Back</button>
@@ -239,12 +243,19 @@
                 </div>
           </div>
     </div>
+    
     <div class="setup-content {{ $currentStep != 4 ? 'displayNone' : '' }}" id="step_4">
+    @if($will_support == '1k-5k' || $monthly_amount <= '5999')
+   
+    @else
+    <div class="text-center mt-5 mb-5">
+           <a href="{{ url('admin/login') }}" class="btn btn-success btn-lg">Proceed To Sign-in</a>
+      </div>
+    
+    @endif
 
-        <div class="text-center mt-5 mb-5">
-            <a href="{{ url('admin/login') }}" class="btn btn-success btn-lg">Proceed To Sign-in</a>
-       </div>
 
+    
     </div>
    {{-- wizard Ends --}}
 

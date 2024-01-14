@@ -5,10 +5,8 @@
       <h2 class="text-capitalize">Complete The Eligibility Form To Sign in </h2>
    </div>
     <livewire:register/>
-
 </div>
 @livewireScripts()
-
 <style>
       
     .stepwizard-step p {

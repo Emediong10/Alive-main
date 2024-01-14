@@ -2,28 +2,28 @@
 @section('content')
 <!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element min-vh-100 include-header" style="background: url('new/demos/crowdfunding/images/hero.svg') no-repeat center bottom / cover;">
-			<div class="slider-inner">
+	<section id="slider" class="slider-element min-vh-100 include-header" style="background: url('new/demos/crowdfunding/images/hero.svg') no-repeat center bottom / cover;">
+		<div class="slider-inner">
 
-				<div class="vertical-middle">
-					<div class="container py-5">
-						<div class="row">
-							<div class="col-lg-6 col-md-8">
-								<div class="slider-title">
-									<h1 class="fw-semibold">ALIVE-NIGERIA MEMBERSHIP AND REGISTRATION PORTAL</h1>
-									<p class="text-muted">Our mission is to prepare Africa for the imminent return of Jesus Christ through biblical spiritual training and evangelistic efforts. It is our goal to challenge African Seventh-day Adventist young adults to live a lifestyle of authentic biblical excellence, instill a missionary volunteer spirit in every African Seventh-day Adventist young adult, mobilize and support young adult missionary movements across Africa, create a meaningful impact in neglected areas, and finally change the continent of Africa by ushering in the imminent return of Jesus Christ.</p>
-								</div>
-								<a href="{{ route('registration') }}" class="button button-large fw-semibold button-rounded ls0 nott ms-0">Check your eligibility</a>
-								<a href="{{ url('admin/login') }}" class="button button-large fw-semibold button-border button-rounded ls0 nott">Sign In</a><br>
-								<a href="{{ route('membership_policy') }}">Read Membership policies here <i class="icon-caret-right1 position-relative" style="top: 2px"></i></a>
+			<div class="vertical-middle">
+				<div class="container py-5">
+					<div class="row">
+						<div class="col-lg-6 col-md-8">
+							<div class="slider-title">
+								<h1 class="fw-semibold">ALIVE-NIGERIA MEMBERSHIP PORTAL</h1>
+								<p class="text-muted">Our mission is to prepare Africa for the imminent return of Jesus Christ through biblical spiritual training and evangelistic efforts. It is our goal to challenge African Seventh-day Adventist young adults to live a lifestyle of authentic biblical excellence, instill a missionary volunteer spirit in every African Seventh-day Adventist young adult, mobilize and support young adult missionary movements across Africa, create a meaningful impact in neglected areas, and finally change the continent of Africa by ushering in the imminent return of Jesus Christ.</p>
 							</div>
-            <img src="assets/images/welcome2.png" alt="" class="slider-img parallax;"  data-400="margin-top:40px;adeInRight" style="border-radius: 15px; padding-left:60px; width: 500px;">
+							<a href="{{ route('registration') }}" class="button button-large fw-semibold button-rounded ls0 nott ms-0">Register Here</a>
+							<a href="{{ url('admin/login') }}" class="button button-large fw-semibold button-border button-rounded ls0 nott">Sign In</a><br>
+							<a href="{{ route('membership_policy') }}">Read Membership policies here <i class="icon-caret-right1 position-relative" style="top: 2px"></i></a>
 						</div>
+		<img src="assets/images/welcome2.png" alt="" class="slider-img parallax;"  data-400="margin-top:40px;adeInRight" style="border-radius: 15px; padding-left:60px; width: 500px;">
 					</div>
 				</div>
-
 			</div>
-		</section><!-- #Slider End -->
+
+		</div>
+	</section><!-- #Slider End -->
 
 		<!-- Content
 		============================================= -->

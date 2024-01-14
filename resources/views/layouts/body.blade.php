@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 @section('body')
 
 <div id="wrapper" class="clearfix">
@@ -48,6 +48,6 @@
 
 			
 
-@endsection
+@endsection --}}
 
 

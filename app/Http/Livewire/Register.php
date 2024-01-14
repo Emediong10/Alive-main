@@ -30,12 +30,12 @@ class Register extends Component
             'firstname' => 'required',
             'middlename' => 'required',
             'lastname' => 'required',
-            'phone' => 'required',
             'dob' => 'required',
+            'phone'=>'required|unique:users,phone',
             'gender' => 'required',
             'chapter' => 'required',
             'email'=>'required|email|unique:users,email',
-            'phone'=>'required|max:11|unique:users,phone',
+            'phone'=>'required|unique:users,phone',
          ]);
         //  dd($this->phone);
       
@@ -69,12 +69,11 @@ class Register extends Component
                 // 'monthly_outreach' => 'required',
             ]);
         
+            
         //    dd(json_encode($answers));
+    
 
-
-        
-
-        $this->successMsg = "Saved";
+        //$this->successMsg = "Saved";
         $this->currentStep = 3;
 
     }
@@ -90,16 +89,16 @@ class Register extends Component
              $this->validate([
                  'monthly_amount' => 'required',
                 'currency'=>'required',
-             ]);
-         }
-        
-        $this->validate
-        ([ 
-            'password' => 'required|min:8',
-            'confirm_password' => 'required|same:password'
-        ]);
-
-        
+            ]);
+        }
+   if($this->monthly_amount >='6000') 
+   {
+         $this->validate([
+                'password' => 'required|min:8',
+                'confirm_password' => 'required|same:password'
+         ]);
+             } 
+         
         $answers=[
             'monthly_outreach'=>$this->monthly_outreach,
             'outreach'=> $this->outreach,
@@ -144,7 +143,18 @@ class Register extends Component
 
 
         // $this->user->assignRole('member');
+
+     
+
+
+        if($this->will_support == '1k-5k' || $this->monthly_amount <= '5999')
+        {
+         $this->successMsg = "Thank You for registering as a Volunteer Member";
+         //$this->reset();
+        }
+     else {
         $this->successMsg = 'Thank you For filling the Form, You can now proceed to Sign in';
+        }
         $this->currentStep = 4;
         // $this->reset();
 
@@ -156,7 +166,7 @@ class Register extends Component
     public function submitForm()
     {
      
-        // session()->flash('success_message',$this->successMsg);
+       // session()->flash('success_message',$this->successMsg);
        
         
     }
