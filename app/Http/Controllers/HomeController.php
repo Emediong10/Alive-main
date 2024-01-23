@@ -29,7 +29,7 @@ class HomeController extends Controller
     return view('Eligibility.form');
     }
     
-    public function membership_policy()
+    public function membership_standards()
     {
     return view('Eligibility.membership_policy');
     }

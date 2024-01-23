@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Chapter;
+use App\Models\MemberType;
 use Laravel\Sanctum\HasApiTokens;
 use Filament\Models\Contracts\HasName;
 use Spatie\Permission\Traits\HasRoles;
@@ -27,8 +28,10 @@ class User extends Authenticatable
         'middlename',
         'lastname',
         'dob',
+        'phone',
         'gender',
-        'chapter',
+        'member_type_id',
+        'chapter_id',
         'email',
         'password',
     ];
@@ -66,6 +69,12 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Chapter::class);
     }
+   
+    public function member_type()
+    {
+        return $this->belongsTo(MemberType::class);
+    }
+
 
     
 }

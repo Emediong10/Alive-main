@@ -30,7 +30,7 @@
                 @if($currentStep != 4)
                  <div class="stepwizard-step">
                     <a href="#step_1" type="button" class="btn btn-circle {{ $currentStep != 1 ? 'btn-default' : 'btn-primary' }}"> <span class="fw-bold" style="font-size: 15px">1</span></a>
-                    <p class="text-capitalize">BIO Date</p>
+                    <p class="text-capitalize">BIO Data</p>
                 </div>
                <div class="stepwizard-step">
                     <a href="#step_1" type="button" class="btn btn-circle {{ $currentStep != 2 ? 'btn-default' : 'btn-primary' }}"> <span class="fw-bold" style="font-size: 15px">2</span></a>
@@ -66,7 +66,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <p><label>Gender:</label></p>
+                       <label for="gender">Gender:</label>
                         <label class="radio-inline">
                             <input class="" type="radio" id="male" wire:model="gender" name="gender" value="male">
                             Male

@@ -16,5 +16,9 @@ class MemberType extends Model
         return $this->hasMany(Application::class);
     }
 
+    public function user()
+    {
+        return $this->hasMany(User::class);
+    }
 
 }

@@ -1,9 +1,9 @@
 @extends('layout.app')
 @section('content')
-<div class="content-wrap">
-   <div class="text-center">
+<div >
+   {{-- <div class="text-center">
       <h2 class="text-capitalize">Complete The Eligibility Form To Sign in </h2>
-   </div>
+   </div> --}}
     <livewire:register/>
 </div>
 @livewireScripts()

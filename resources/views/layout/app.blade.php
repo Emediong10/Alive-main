@@ -129,7 +129,7 @@
 
 					<div class="row justify-content-between align-items-center">
 						<div class="col-md-6">
-							Copyrights &copy; 2023 All Rights Reserved by Alive-Nigeria.
+							Copyrights &copy; 2024 All Rights Reserved by Alive-Nigeria.
 						</div>
 
 						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">

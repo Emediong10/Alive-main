@@ -8,7 +8,7 @@
 			<div id="particles-line"></div>
 
 			<div class="container clearfix mt-4">
-				<h1>ALIVE-NIGERIA MEMBERSHIP POLICIES </h1>
+				<h1>ALIVE-NIGERIA STANDARDS  </h1>
 				<br>
 				<p class="rounded-pill border border-light text-light">These are our standards for Christian living. Our position on several topics is outlined in the paragraphs below.
 				</p>

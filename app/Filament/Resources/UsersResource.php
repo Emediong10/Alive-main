@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use App\Models\User;
+use App\Models\Chapter;
 use Filament\Tables;
 use Filament\Resources\Form;
 use Filament\Resources\Table;
@@ -52,7 +53,8 @@ class UsersResource extends Resource
                 TextColumn::make('email')->searchable(),
                 TextColumn::make('phone')->searchable(),
                 TextColumn::make('gender')->searchable(),
-                TextColumn::make('member_type.type')->sortable(),
+                TextColumn::make('chapter.name')->sortable()->searchable(),
+                TextColumn::make('member_type.name')->sortable()->searchable(),
             ])
             ->filters([
                 //

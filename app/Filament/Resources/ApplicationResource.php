@@ -74,6 +74,7 @@ class ApplicationResource extends Resource
                     TextColumn::make('user.lastname')->label('Lastname')->searchable(),
                     TextColumn::make('user.dob')->label('Date of Birth')->searchable(),
                     TextColumn::make('user.email')->label('Email')->searchable(),
+                    TextColumn::make('user.chapter_id.name')->label('chapter')->searchable(),
                     TextColumn::make('user.phone')->label('phone')->searchable(),
                     TextColumn::make('user.gender')->label('Gender')->searchable(),
                 TextColumn::make('status')->getStateUsing(function($record){

@@ -112,6 +112,8 @@ class Register extends Component
             'currency'=> $this->currency
         ];
 
+        
+
 
         
         $user = User::create([
@@ -129,32 +131,48 @@ class Register extends Component
             //
         ])
 
+
         ]);
+
+
+        
         Application::create([
             // 'answers'=>json_encode($answers),
             // 'user_id'=>3,
             'answers'=>[$answers],
             'user_id'=>$user->id,
-            'member_type_id'=>null,
+           // 'member_type_id'=>null,
             'status'=>0
            ]);
            
-           
+        //    if($answers['monthly_outreach'] == 'no' && $answers['will_support'] >= '10kabove' && $answers['professional'] == 'yes' && $answers['attended_mission'] == 'no'){
+        //     $user->assignRole('financial');
+        // }
+
+        // if($answers['monthly_outreach'] == 'yes' && $answers['will_support'] >= '10k ' && $answers['professional'] == 'yes' && $answers['attended_mission'] == 'no'){
+        //     $user->assignRole('outreach member');
+        // }else{
+
+        //     $user->assignRole('volunteer');
+
+        // }
 
 
         // $this->user->assignRole('member');
 
-     
+         if($this->will_support == '1k-5k' || $this->monthly_amount <= '5999')
 
+          {
+            $this->successMsg = "Thank you for registering as a Volunteer with ALIVE-Nigeria for 2024.
+            Then He said to His disciples, As a volunteer, we’ll keep you updated on our upcoming events and programs. Looking forward to having your support for our programs.
+            Together, let’s continually raise the banner of Christ higher. Maranatha!";
+            //$this->reset();
+        }
 
-        if($this->will_support == '1k-5k' || $this->monthly_amount <= '5999')
-        {
-         $this->successMsg = "Thank You for registering as a Volunteer Member";
-         //$this->reset();
-        }
-     else {
-        $this->successMsg = 'Thank you For filling the Form, You can now proceed to Sign in';
-        }
+          else
+         {
+            $this->successMsg = 'Thank you For filling the Form, You can now proceed to Sign in';
+         }
         $this->currentStep = 4;
         // $this->reset();
 
