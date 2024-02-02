@@ -9,11 +9,18 @@ class News extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'title','content','slug','active'
+    ];
 
-    public function applications()
+    public function recipient()
     {
-        return $this->hasMany(Application::class);
+        return $this->hasMany(NewsRecipient::class);
+    }
+
+    public function group()
+    {
+        return $this->hasMany(NewsRecipient::class,'news_id');
     }
 }
 

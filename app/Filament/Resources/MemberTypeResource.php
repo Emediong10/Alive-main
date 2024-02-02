@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\MemberTypeResource\Pages;
 use App\Filament\Resources\MemberTypeResource\RelationManagers;
 use App\Models\MemberType;
+use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
@@ -20,7 +21,7 @@ class MemberTypeResource extends Resource
 {
     protected static ?string $model = MemberType::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-sun';
 
     protected static function shouldRegisterNavigation(): bool
     {
@@ -46,7 +47,13 @@ class MemberTypeResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('type'),
-                TextColumn::make('applications_count')->counts('applications')->label('Number of Applications')
+                TextColumn::make('applications_count')
+                ->counts('applications')
+                ->getStateUsing(function($record){
+                    $count = User::where('member_type_id',$record->id)->count();
+                    return $count;
+                })
+                ->label('Number of Applications')
 
             ])
             ->filters([
@@ -63,7 +70,8 @@ class MemberTypeResource extends Resource
     public static function getRelations(): array
     {
         return [
-            RelationManagers\ApplicationsRelationManager::class
+            // RelationManagers\ApplicationsRelationManager::class
+            RelationManagers\UsersRelationManager::class
         ];
     }
 

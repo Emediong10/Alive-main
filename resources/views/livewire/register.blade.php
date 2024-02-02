@@ -135,10 +135,10 @@
                         <div class="form-group">
                             <p>I am a graduate or a Professional:</p>
                               <label class="radio-inline">
-                                <input type="radio" class="" wire:model="professional" value="professional">Yes
+                                <input type="radio" class="" wire:model="professional" value="yes">Yes
                               </label>
                               <label class="radio-inline">
-                                <input type="radio" class="" wire:model="professional" value="graduate">No
+                                <input type="radio" class="" wire:model="professional" value="no">No
                               </label> <br>
                               @error('professional') <span class="error text-danger">{{ $message }}</span> @enderror
                         </div>
@@ -216,7 +216,7 @@
                             </select>
                         @error('currency') <span class="error text-danger">{{ $message }}</span> @enderror
                     </div>
-                        @if ($monthly_amount >='6000')
+                        @if ($monthly_amount >='1000')
                         
                         <div class="col-md-6 col-sm-12">
                             <div class="form-group">
@@ -245,8 +245,10 @@
     </div>
     
     <div class="setup-content {{ $currentStep != 4 ? 'displayNone' : '' }}" id="step_4">
-    @if($will_support == '1k-5k' || $monthly_amount <= '5999')
-   
+    @if($will_support == '1k-5k' && $monthly_amount <= '1000')
+    <div class="text-center mt-5 mb-5">
+        <a href="{{ url('registration') }}" class="btn btn-success btn-lg"> Go back</a>
+   </div>
     @else
     <div class="text-center mt-5 mb-5">
            <a href="{{ url('admin/login') }}" class="btn btn-success btn-lg">Proceed To Sign-in</a>

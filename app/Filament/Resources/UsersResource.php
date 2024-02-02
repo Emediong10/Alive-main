@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use Filament\Forms;
 use App\Models\User;
 use App\Models\Chapter;
+use App\Models\MemberType;
 use Filament\Tables;
 use Filament\Resources\Form;
 use Filament\Resources\Table;
@@ -54,7 +55,7 @@ class UsersResource extends Resource
                 TextColumn::make('phone')->searchable(),
                 TextColumn::make('gender')->searchable(),
                 TextColumn::make('chapter.name')->sortable()->searchable(),
-                TextColumn::make('member_type.name')->sortable()->searchable(),
+                TextColumn::make('member_type.type')->sortable()->searchable(),
             ])
             ->filters([
                 //
@@ -70,7 +71,8 @@ class UsersResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            // UserRelationManager::class,
+            RelationManagers\MemberTypeRelationManager::class
         ];
     }
 

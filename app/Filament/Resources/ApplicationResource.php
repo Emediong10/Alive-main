@@ -46,13 +46,13 @@ class ApplicationResource extends Resource
                 Section::make('View Application')->schema([
                    
                    
-                    Select::make('member_type_id')->relationship('member_type','type')->required(),
-                    Toggle::make('status')->label('Review Completed'),
+                   //Select::make('member_type_id')->relationship('member_type','type')->required(),
+                   // Toggle::make('status')->label('Review Completed'),
                     Repeater::make('answers')->schema([
                         TextInput::make('monthly_outreach')->label('I personally do active outreach monthly (not just church work):')->disabledOn('edit'),
                         
-                        TextInput::make('professional')->label('I am a professional:')->disabledOn('edit'),
-                       
+                        TextInput::make('professional')->label('I am a professional or graduate:')->disabledOn('edit'),
+                        TextInput::make('christian_standard')->label('I strive to live out our high Christian standard as taught by the Bible and SOP')->disabledOn('edit'),
                         TextInput::make('will_support')->label('I desire to support ALIVE-Nigeria ministry with at least monthly:')->disabledOn('edit'),
                         TextInput::make('monthly_support')->label('Do you intend to support the ministry of ALIVE Nigeria on a monthly basis?')->disabledOn('edit'),
                         TextInput::make('monthly_amount')->label('Specify Amount you intend to Support Alive Nigeria with')->disabledOn('edit'),
@@ -74,19 +74,20 @@ class ApplicationResource extends Resource
                     TextColumn::make('user.lastname')->label('Lastname')->searchable(),
                     TextColumn::make('user.dob')->label('Date of Birth')->searchable(),
                     TextColumn::make('user.email')->label('Email')->searchable(),
-                    TextColumn::make('user.chapter_id.name')->label('chapter')->searchable(),
-                    TextColumn::make('user.phone')->label('phone')->searchable(),
+                     TextColumn::make('user.phone')->label('phone')->searchable(),
                     TextColumn::make('user.gender')->label('Gender')->searchable(),
-                TextColumn::make('status')->getStateUsing(function($record){
-                    if($record->status==0 || $record->status==null)
-                    {
-                        return "Pending Review ...";
-                    }
-                    else
-                    {
-                        return "Reviewed";
-                    }
-                })->sortable()
+                    TextColumn::make('user.chapter.name')->sortable()->searchable(),
+                    TextColumn::make('user.member_type.type')->sortable()->searchable(),
+                // TextColumn::make('status')->getStateUsing(function($record){
+                //     if($record->status==0 || $record->status==null)
+                //     {
+                //         return "Pending Review ...";
+                //     }
+                //     else
+                //     {
+                //         return "Reviewed";
+                //     }
+                // })->sortable()
             ])
             ->filters([
                 //

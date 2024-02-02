@@ -11,14 +11,14 @@ class NewsRecipient extends Model
 
     protected $guarded = [];
 
-    public function applications()
+    public function user()
     {
-        return $this->hasMany(Application::class, 'applications_id');
+        return $this->belongsTo(User::class,'user_id');
     }
 
     public function news()
     {
-        return $this->hasManyThrough(News::class, Application::class, 'news_recipient_id', 'application_id');
+        return $this->belongsTo(News::class,'news_id');
     }
 
 }

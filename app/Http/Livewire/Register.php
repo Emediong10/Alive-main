@@ -91,7 +91,7 @@ class Register extends Component
                 'currency'=>'required',
             ]);
         }
-   if($this->monthly_amount >='6000') 
+   if($this->monthly_amount >='1000') 
    {
          $this->validate([
                 'password' => 'required|min:8',
@@ -101,11 +101,9 @@ class Register extends Component
          
         $answers=[
             'monthly_outreach'=>$this->monthly_outreach,
-            'outreach'=> $this->outreach,
-            'outreach_experience'=> $this->outreach_experience,
             'professional'=> $this->professional,
             'attended_mission'=> $this->attended_mission,
-            'good_standing_adventist'=> $this->good_standing_adventist,
+            'christian_standard'=> $this->christian_standard,
             'will_support'=> $this->will_support,
             'monthly_support'=> $this->monthly_support,
             'monthly_amount'=> $this->monthly_amount,
@@ -141,38 +139,35 @@ class Register extends Component
             // 'user_id'=>3,
             'answers'=>[$answers],
             'user_id'=>$user->id,
-           // 'member_type_id'=>null,
             'status'=>0
            ]);
            
-        //    if($answers['monthly_outreach'] == 'no' && $answers['will_support'] >= '10kabove' && $answers['professional'] == 'yes' && $answers['attended_mission'] == 'no'){
-        //     $user->assignRole('financial');
-        // }
 
-        // if($answers['monthly_outreach'] == 'yes' && $answers['will_support'] >= '10k ' && $answers['professional'] == 'yes' && $answers['attended_mission'] == 'no'){
-        //     $user->assignRole('outreach member');
-        // }else{
+          // dd($answers);
+        if($answers['monthly_outreach'] == 'no' && $answers['professional'] == 'no' && $answers['attended_mission'] == 'no' && $answers['christian_standard'] == 'no'  && $answers['will_support'] == '10k' && $answers['monthly_support'] >= '10000' && $answers['currency'] == 'NGN' || 'USD'){
+             $user->assignRole('financial');
+             $user->member_type_id = 2;
+             $user->update();
+             $this->successMsg = "Thank you for registering as a Financial Member with ALIVE-Nigeria for 2024.
+        Let’s continually raise the banner of Christ higher. Maranatha!";
+        }
+        if($answers['monthly_outreach'] == 'yes' && $answers['professional'] == 'yes' && $answers['attended_mission'] == 'yes' && $answers['christian_standard'] == 'yes'  && $answers['will_support'] == '1k-5k'||'6k-9k'&& $answers['monthly_support'] <= '10000' && $answers['currency'] == 'NGN'||'USD'){
+             $user->assignRole('member');
+             $user->member_type_id = 5;
+             $user->update();
+             $this->successMsg = "Thank you for registering as a Outreach Member with ALIVE-Nigeria for 2024.
+        Let’s continually raise the banner of Christ higher. Maranatha!";
 
-        //     $user->assignRole('volunteer');
+        }else{
 
-        // }
+            $user->assignRole('volunteer');
+            $user->member_type_id = 3;
+            $user->update();
+            $this->successMsg = "Thank you for registering as a Volunteer Member with ALIVE-Nigeria for 2024.
+        Let’s continually raise the banner of Christ higher. Maranatha!";
 
-
-        // $this->user->assignRole('member');
-
-         if($this->will_support == '1k-5k' || $this->monthly_amount <= '5999')
-
-          {
-            $this->successMsg = "Thank you for registering as a Volunteer with ALIVE-Nigeria for 2024.
-            Then He said to His disciples, As a volunteer, we’ll keep you updated on our upcoming events and programs. Looking forward to having your support for our programs.
-            Together, let’s continually raise the banner of Christ higher. Maranatha!";
-            //$this->reset();
         }
 
-          else
-         {
-            $this->successMsg = 'Thank you For filling the Form, You can now proceed to Sign in';
-         }
         $this->currentStep = 4;
         // $this->reset();
 
