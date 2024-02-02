@@ -33,6 +33,14 @@ class NewsResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-inbox';
 
+    protected static function shouldRegisterNavigation(): bool
+    {
+        if(auth()->user()->hasRole(['admin'])){
+            return true;
+        }
+        return false;
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -72,7 +80,7 @@ class NewsResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('title')->searchable(),
-                TextColumn::make('content')->searchable(),
+               // TextColumn::make('content')->searchable(),
                 TextColumn::make('active')->searchable()
             ])
 

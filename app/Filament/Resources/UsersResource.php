@@ -40,7 +40,8 @@ class UsersResource extends Resource
                 TextInput::make('firstname'),
                 TextInput::make('middlename'),
                 TextInput::make('lastname'),
-                TextInput::make('email')
+                TextInput::make('email'),
+                TextColumn::make('phone')
             ]);
     }
 
@@ -56,6 +57,7 @@ class UsersResource extends Resource
                 TextColumn::make('gender')->searchable(),
                 TextColumn::make('chapter.name')->sortable()->searchable(),
                 TextColumn::make('member_type.type')->sortable()->searchable(),
+                TextColumn::make('created_at')->sortable()->searchable(),
             ])
             ->filters([
                 //

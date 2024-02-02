@@ -144,14 +144,14 @@ class Register extends Component
            
 
           // dd($answers);
-        if($answers['monthly_outreach'] == 'no' && $answers['professional'] == 'no' && $answers['attended_mission'] == 'no' && $answers['christian_standard'] == 'no'  && $answers['will_support'] == '10k' && $answers['monthly_support'] >= '10000' && $answers['currency'] == 'NGN' || 'USD'){
+        if($answers['monthly_outreach'] == 'no' || 'yes' && $answers['professional'] == 'no'||'yes' && $answers['attended_mission'] =='no'||'yes' && $answers['christian_standard'] == 'no'||'yes'  && $answers['will_support'] == '10k' && $answers['monthly_support'] == 'yes' && $answers['currency'] == 'NGN'||'USD'  && $answers['monthly_amount'] >= '10000'){
              $user->assignRole('financial');
              $user->member_type_id = 2;
              $user->update();
              $this->successMsg = "Thank you for registering as a Financial Member with ALIVE-Nigeria for 2024.
         Let’s continually raise the banner of Christ higher. Maranatha!";
         }
-        if($answers['monthly_outreach'] == 'yes' && $answers['professional'] == 'yes' && $answers['attended_mission'] == 'yes' && $answers['christian_standard'] == 'yes'  && $answers['will_support'] == '1k-5k'||'6k-9k'&& $answers['monthly_support'] <= '10000' && $answers['currency'] == 'NGN'||'USD'){
+        elseif($answers['monthly_outreach'] == 'yes' && $answers['professional'] == 'yes' && $answers['attended_mission'] == 'yes' && $answers['christian_standard'] == 'yes'  && $answers['will_support'] == '1k-5k'||'6k-9k' && $answers['monthly_support'] == 'yes' && $answers['currency'] == 'NGN'||'USD'  && $answers['monthly_amount'] <= '9999'){
              $user->assignRole('member');
              $user->member_type_id = 5;
              $user->update();
@@ -163,10 +163,11 @@ class Register extends Component
             $user->assignRole('volunteer');
             $user->member_type_id = 3;
             $user->update();
-            $this->successMsg = "Thank you for registering as a Volunteer Member with ALIVE-Nigeria for 2024.
+           $this->successMsg = "Thank you for registering as a Volunteer Member with ALIVE-Nigeria for 2024.
         Let’s continually raise the banner of Christ higher. Maranatha!";
 
         }
+       // dd($answers);
 
         $this->currentStep = 4;
         // $this->reset();
