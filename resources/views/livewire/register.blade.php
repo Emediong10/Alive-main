@@ -146,6 +146,7 @@
                             <label> I desire to support ALIVE-Nigeria ministry with at least monthly</label>
                             <select class="form-select" wire:model="will_support">
                                 <option value="">Select Option</option>
+                                <option value="i don't want to support">I don't want to support AliveNG</option>
                                 <option value="1k-5k">1k - 5k</option>
                                 <option value="6k-9k">6k - 9k</option>
                                 <option value="10k">10k above</option>

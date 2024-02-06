@@ -13,6 +13,7 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use App\Models\User;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
@@ -57,7 +58,12 @@ class ChapterResource extends Resource
                         'danger'=> fn($state, $record): bool => $record->active ==false,
                         'success' => fn($state, $record): bool => $record->active ==true
                     ]),
-                TextColumn::make('applications_count')->counts('applications')->label('Number of Applications')
+                TextColumn::make('applications_count')->counts('applications')
+                ->getStateUsing(function($record){
+                    $count = User::where('chapter_id',$record->id)->count();
+                    return $count;
+                })
+                ->label('Number of Applications')
             ])
             ->filters([
                 //
@@ -73,7 +79,7 @@ class ChapterResource extends Resource
     public static function getRelations(): array
     {
         return [
-            RelationManagers\ApplicationsRelationManager::class
+            RelationManagers\UsersRelationManager::class
         ];
     }
 

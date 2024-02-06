@@ -52,10 +52,11 @@ class UpdateProfile extends Page
                 ->label('Occupation')
                 ->required(),
                 TextInput::make('professional_abilities')
-                ->label('Course of study')
+                ->label('Professional_abilities')
                 ->required(),
                 Select::make('past_mission')
                 ->multiple()
+                ->required()
                     ->options([
 
                         'Ugbomoro_delta' => 'Ugbomoro - Delta',
@@ -96,6 +97,7 @@ class UpdateProfile extends Page
                 Select::make('area_of_interest')
                 ->label('AREA of INTEREST In MINISTRY (You can choose more than 1 option)')
                 ->multiple()
+                ->required()
                 ->options([
                         'logistics' => 'Logistics',
                         'Reporting' => 'Reporting',
@@ -112,10 +114,11 @@ class UpdateProfile extends Page
                         'Graphics_design' => 'Computer Graphics and design',
                         'Media_Digital_Evangelism' => 'Social Media/Digital Evangelism',
                         'Kitchen_Cooking' => 'Kitchen - Cooking',
-                        'Other' => 'Other'
+                        'Others' => 'Others'
                     ]),
                 Select::make('spiritual_gift')->label('What gifts have you noticed the Lord has endowed you with? Your top 3 ')
                 ->multiple()
+                ->required()
                ->options([
                         'Word_of_wisdom' => 'Word of wisdom',
                         'Word_of_knowledge' => 'Word of knowledge',
@@ -141,6 +144,7 @@ class UpdateProfile extends Page
                     ]),
                 Select::make('skills')->label(' Select Your talents or special Skills the Lord has blessed you with')
                ->multiple()
+               ->required()
                     ->options([
                         'Reading' => 'Reading',
                         'Researching' => 'Researching',

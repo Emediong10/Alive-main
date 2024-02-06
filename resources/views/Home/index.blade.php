@@ -40,35 +40,44 @@
 					<div class="row justify-content-center col-mb-50 mb-5">
 						<div class="col-md-6 col-lg-4">
 							
-							<div class="fslider" data-pagi="false" data-arrows="false">
+							<div class="fslider"  data-direction="horizontal" data-pagi="false" data-arrows="false">
 								<div class="flexslider">
 									<div class="slider-wrap">
-										<div class="slide"><img src="{{ asset ('assets/images/Alive1.jpeg')}}" alt="Slider 1"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/Alive2.jpeg')}}" alt="Slider 2"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/Alive3.jpeg')}}" alt="Slider 3"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic17.jpg')}}" alt="Slider 1"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic8.jpg')}}" alt="Slider 2"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic19.jpg')}}" alt="Slider 3"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic14.jpg')}}" alt="Slider 4"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic4.jpg')}}" alt="Slider 5"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic13.jpg')}}" alt="Slider 6"></div>
+
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-4">
-							
-							<div class="fslider" data-animation="fade" data-pagi="false" data-arrows="false">
+						<div class="fslider"  data-direction="horizontal" data-pagi="false" data-arrows="false">
 								<div class="flexslider">
 									<div class="slider-wrap">
-										<div class="slide"><img src="{{ asset ('assets/images/Alive4.jpeg')}}" alt="Slider 1"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/Alive5.jpeg')}}" alt="Slider 2"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/Alive6.jpeg')}}" alt="Slider 3"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic1.jpg')}}" alt="Slider 1"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic2.jpg')}}" alt="Slider 2"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic7.jpg')}}" alt="Slider 3"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic5.jpg')}}" alt="Slider 4"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic15.jpg')}}" alt="Slider 5"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic13.jpg')}}" alt="Slider 6"></div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-4">
-							<div class="fslider" data-direction="vertical" data-pagi="false" data-arrows="false">
+							<div class="fslider"  data-direction="horizontal" data-pagi="false" data-arrows="false">
 								<div class="flexslider">
 									<div class="slider-wrap">
-										<div class="slide"><img src="{{ asset ('assets/images/Alive7.jpg')}}" alt="Slider 1"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/Alive8.jpg')}}" alt="Slider 2"></div>
-										<div class="slide"><img src="{{ asset ('assets/images/Alive9.jpg')}}" alt="Slider 3"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic11.jpg')}}" alt="Slider 1"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic.jpg')}}" alt="Slider 2"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic18.jpg')}}" alt="Slider 3"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic10.jpg')}}" alt="Slider 4"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic21.jpg')}}" alt="Slider 5"></div>
+										<div class="slide"><img src="{{ asset ('assets/images/Alivepic6.jpg')}}" alt="Slider 6"></div>
 									</div>
 								</div>
 							</div>

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\MemberTypeResource\RelationManagers;
+namespace App\Filament\Resources\ChapterResource\RelationManagers;
 
 use Filament\Forms;
-use Filament\Tables;
 use Filament\Resources\Form;
+use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\Table;
-// use Tables\Columns\TextColumn;
+use Filament\Tables;
+
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Resources\RelationManagers\RelationManager;
 
 class UsersRelationManager extends RelationManager
 {
@@ -31,13 +31,12 @@ class UsersRelationManager extends RelationManager
     {
         return $table
             ->columns([
-                // Tables\Columns\TextColumn::make('firstname'),
                 Tables\Columns\TextColumn::make('firstname')->searchable(),
                 Tables\Columns\TextColumn::make('middlename')->searchable(),
                 Tables\Columns\TextColumn::make('lastname')->searchable(),
                 Tables\Columns\TextColumn::make('chapter.name')->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('email')->searchable(),
-                Tables\Columns\TextColumn::make('phone')
+                Tables\Columns\TextColumn::make('phone'),
             ])
             ->filters([
                 //

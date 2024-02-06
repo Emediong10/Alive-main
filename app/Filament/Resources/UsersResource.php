@@ -41,7 +41,7 @@ class UsersResource extends Resource
                 TextInput::make('middlename'),
                 TextInput::make('lastname'),
                 TextInput::make('email'),
-                TextColumn::make('phone')
+                TextInput::make('phone')
             ]);
     }
 
@@ -74,7 +74,7 @@ class UsersResource extends Resource
     {
         return [
             // UserRelationManager::class,
-            RelationManagers\MemberTypeRelationManager::class
+         RelationManagers\MemberTypeRelationManager::class
         ];
     }
 

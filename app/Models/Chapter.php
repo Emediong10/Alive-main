@@ -16,9 +16,10 @@ class Chapter extends Model
         return $this->hasMany(Application::class);
     }
 
-    public function user()
+    public function users()
     {
         return $this->hasMany(User::class);
     }
 
+   
 }
