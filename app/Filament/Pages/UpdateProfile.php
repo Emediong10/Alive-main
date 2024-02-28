@@ -3,12 +3,18 @@
 namespace App\Filament\Pages;
 
 use App\Models\Details;
+use App\Models\Skill;
+use App\Models\AreaInterest;
+use App\Models\Mission;
+use App\Models\SpiritualGift;
 use Filament\Pages\Page;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Redirect;
+//use Filament\Forms\Components\Select;
+use Illuminate\Database\Eloquent\Builder;
 
 class UpdateProfile extends Page
 {
@@ -24,7 +30,7 @@ class UpdateProfile extends Page
     public $skills;
     public $occupation;
     public $degree;
-    public $past_mission;
+    public $name = [];
 
     public function mount(): void
     {
@@ -34,7 +40,7 @@ class UpdateProfile extends Page
 
     protected static function shouldRegisterNavigation(): bool
     {
-        return false;
+        return true;
     }
 
     protected function getFormSchema(): array
@@ -51,9 +57,31 @@ class UpdateProfile extends Page
                 TextInput::make('occupation')
                 ->label('Occupation')
                 ->required(),
-                TextInput::make('professional_abilities')
-                ->label('Professional_abilities')
-                ->required(),
+               TextInput::make('professional_abilities')
+                ->label('Professional_abilities'),
+         
+                Select::make('missionId')
+                ->label('Missions Attended')
+                ->options(Mission::all()->pluck('name', 'id'))
+                ->searchable()
+                ->preload(),
+                Select::make('area_interestId')
+                ->label('Area of interest in ministry (You can choose more than 1 option)')
+                ->options(AreaInterest::all()->pluck('name', 'id'))
+                ->searchable()
+                ->preload(),
+
+                Select::make('skillId')
+                ->label('Select Your talents or special Skills the Lord has blessed you with')
+                ->options(Skill::all()->pluck('name', 'id'))
+                ->searchable(),
+
+                Select::make('spiritual_giftId')
+                ->label('What gifts have you noticed the Lord has endowed you with? Your top 3 ')
+                ->options(SpiritualGift::all()->pluck('name', 'id'))
+                ->searchable()
+
+                 ->preload(),
                 Select::make('past_mission')
                 ->multiple()
                 ->required()
@@ -166,11 +194,18 @@ class UpdateProfile extends Page
             // ...
         ];
     }
+    
+
+    // protected function getTableRecordUrlUsing(): ?Closure
+    // {
+    //     return fn (Model $record): string => SkillsResource::getUrl('edit',['record'=>$record]);
+    // }
 
     public function submit()
     {
         // dd($this->form->getState());
         $data = $this->form->getState();
+       // Skill::DB::table('users');
 
         Details::create([
             'user_id' => $this->user_id,
@@ -178,10 +213,10 @@ class UpdateProfile extends Page
             'degree' => $data['degree'],
             'occupation' => $data['occupation'],
             'professional_abilities' => $data['professional_abilities'],
-            'past_mission' => $data['past_mission'],
+            'mission' => $data['mission'],
             'area_of_interest' => $data['area_of_interest'],
             'spiritual_gift' => $data['spiritual_gift'],
-            'skills' => $data['skills'],
+            //'skill' => $data['skill'],
 
         ]);
 

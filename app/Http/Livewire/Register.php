@@ -57,16 +57,12 @@ class Register extends Component
     {
         $this->validate([
             'monthly_outreach' => 'required',
-        //  ]);
-         
-        // if($this->monthly_outreach == 'yes')
-        // {
-            //   $this->validate([
+        
                 'christian_standard'=>'required',
                 'attended_mission'=>'required',
                 'professional'=>'required',
                 'will_support'=>'required',
-                // 'monthly_outreach' => 'required',
+               
             ]);
         
             
@@ -172,7 +168,8 @@ class Register extends Component
             $user->member_type_id = 5;
             $this->successMsg = "Thank you for registering as an Outreach Member with ALIVE-Nigeria for 2024. Let’s continually raise the banner of Christ higher. Maranatha!";
             $user->update();
-        } else {
+        }
+         else {
             $user->assignRole('volunteer');
             $user->member_type_id = 3;
             $this->successMsg = "Thank you for registering as a Volunteer Member with ALIVE-Nigeria for 2024. Let’s continually raise the banner of Christ higher. Maranatha!";

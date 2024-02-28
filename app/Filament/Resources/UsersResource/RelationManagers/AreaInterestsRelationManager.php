@@ -10,17 +10,17 @@ use Filament\Tables;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class MemberTypeRelationManager extends RelationManager
+class AreaInterestsRelationManager extends RelationManager
 {
-    protected static string $relationship = 'member_type';
+    protected static string $relationship = 'area_interests';
 
-    protected static ?string $recordTitleAttribute = 'type';
+    protected static ?string $recordTitleAttribute = 'name';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('type')
+                Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
             ]);
@@ -30,7 +30,7 @@ class MemberTypeRelationManager extends RelationManager
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('type'),
+                Tables\Columns\TextColumn::make('name'),
             ])
             ->filters([
                 //

@@ -7,7 +7,7 @@ use App\Filament\Widgets\NewsWidget;
 
 class Dashboard extends Page
 {
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static ?string $navigationIcon = 'heroicon-o-inbox';
 
     protected static string $view = 'filament.pages.dashboard';
 

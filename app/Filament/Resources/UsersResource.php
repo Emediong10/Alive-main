@@ -4,13 +4,14 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use App\Models\User;
+use Filament\Tables;
 use App\Models\Chapter;
 use App\Models\MemberType;
-use Filament\Tables;
 use Filament\Resources\Form;
 use Filament\Resources\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Section;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
@@ -36,12 +37,15 @@ class UsersResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
+        ->schema([
+            Section::make('Users details')
             ->schema([
                 TextInput::make('firstname'),
                 TextInput::make('middlename'),
                 TextInput::make('lastname'),
                 TextInput::make('email'),
                 TextInput::make('phone')
+            ])
             ]);
     }
 
@@ -74,7 +78,11 @@ class UsersResource extends Resource
     {
         return [
             // UserRelationManager::class,
-         RelationManagers\MemberTypeRelationManager::class
+     RelationManagers\MemberTypeRelationManager::class,
+      RelationManagers\AreaInterestsRelationManager::class,
+       RelationManagers\MissionsRelationManager::class,
+        RelationManagers\SkillsRelationManager::class,
+        RelationManagers\SpiritualGiftsRelationManager::class
         ];
     }
 

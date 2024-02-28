@@ -27,7 +27,7 @@ class DetailsResource extends Resource
         return false;
     }
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-identification';
 
     public static function form(Form $form): Form
     {

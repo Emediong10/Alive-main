@@ -15,9 +15,9 @@ class Profile extends Page
     protected static function shouldRegisterNavigation(): bool
     {
         if(auth()->user()->hasRole(['admin'])){
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 
     protected function getActions(): array

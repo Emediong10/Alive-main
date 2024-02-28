@@ -4,7 +4,6 @@
         $details = App\Models\Details::where('user_id',$user_id)->first();
     @endphp
     <div class="bg-white shadow-md rounded-lg p-6">
-        {{-- <h2 class="text-xl font-semibold mb-4">User Profile</h2> --}}
         <div class="flex flex-col sm:flex-row items-center mb-8">
             <div class="relative">
                 {{-- @if (isset($details->photo))

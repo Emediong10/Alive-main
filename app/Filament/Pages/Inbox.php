@@ -18,7 +18,7 @@ use Illuminate\Database\Eloquent\Model;
 class Inbox extends Page implements HasTable
 {
     use InteractsWithTable;
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static ?string $navigationIcon = 'heroicon-o-clipboard';
 
     protected static string $view = 'filament.pages.inbox';
 
@@ -33,6 +33,7 @@ class Inbox extends Page implements HasTable
             return News::query()->whereHas('recipient', function($query){
                 return $query->where('user_id',Auth::user()->id);
             })->latest();
+            
         }
         
     }

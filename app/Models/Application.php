@@ -31,10 +31,11 @@ class Application extends Model
         return $this->belongsTo(News::class);
     }
 
-    public function newsRecipient()
+    public function news_recipient()
     {
-        return $this->belongsTo(NewsRecipient::class);
+    return $this->belongsTo(NewsRecipient::class);
     }
+
     public function user()
     {
         return $this->belongsTo(User::class);

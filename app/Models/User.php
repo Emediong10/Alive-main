@@ -75,6 +75,24 @@ class User extends Authenticatable
         return $this->belongsTo(MemberType::class);
     }
 
+    public function missions()
+    {
+    return $this->belongsToMany(Mission::class);
+    }
+    
+    public function area_interests()
+    {
+    return $this->belongsToMany(AreaInterest::class);
+    }
+
+    public function skills()
+    {
+    return $this->belongsToMany(Skill::class);
+    }
+    public function spiritual_gifts()
+    {
+    return $this->belongsToMany(SpiritualGift::class);
+    }
 
     
 }
