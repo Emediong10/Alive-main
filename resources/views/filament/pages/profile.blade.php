@@ -6,15 +6,6 @@
     <div class="bg-white shadow-md rounded-lg p-6">
         <div class="flex flex-col sm:flex-row items-center mb-8">
             <div class="relative">
-                {{-- @if (isset($details->photo))
-                    <img src="{{ url('my-profile-icon-png-24.jpg') }}" alt="Profile Picture"
-                        class="rounded-full w-32 h-32 object-cover mr-4 sm:mr-8">
-                @else
-                    <img src="" alt="Profile Picture"
-                        class="rounded-full w-32 h-32 object-cover mr-4 sm:mr-8">
-                @endif --}}
-            
-
             </div>
             @if (isset($details))
             <dl class="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-8">
@@ -72,42 +63,7 @@
                 </div>
 
                 </div>
-                {{-- <div>
-                    <dt class="text-gray-500 font-medium">Phone Number</dt>
-                    <dd class="text-gray-900 font-semibold">{{ $user->phone }}</dd>
-                </div> --}}
-                {{-- <div>
-                    <dt class="text-gray-500 font-medium">Driver's details issue date</dt>
-                    <dd class="text-gray-900 font-semibold">
-                        @if (isset($details))
-                            {{ $details->driver_details_issue_date->format('jS F Y') }}
-                        @else
-                            Not Available
-                        @endif
-                    </dd>
-                </div> --}}
-                {{-- <div>
-                    <dt class="text-gray-500 font-medium">Driver's details expire date</dt>
-                    <dd class="text-gray-900 font-semibold">
-                        @if (isset($details))
-                            {{ $details->driver_details_expiry_date->format('jS F Y') }}
-                        @else
-                            Not Available
-                        @endif
-                    </dd>
-                </div>
-                <div>
-                    <dt class="text-gray-500 font-medium">Driver's details Picture</dt>
-                    <dd class="text-gray-900 font-semibold">
-                        @if (isset($details))
-                            <img src="{{ url('storage/' . $details->driver_details_picture) }}"
-                                alt="Driver's details Picture" style="width: 300px; height:150px; border-radius:9px"
-                                class="object-cover mr-4 sm:mr-8">
-                        @else
-                            Not uploaded yet
-                        @endif
-                    </dd>
-                </div> --}}
+               
             </dl>
             @else
             <div style="color:black">

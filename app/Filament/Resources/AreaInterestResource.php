@@ -71,7 +71,7 @@ class AreaInterestResource extends Resource
     {
         return [
             'index' => Pages\ListAreaInterests::route('/'),
-            'create' => Pages\CreateAreaInterest::route('/create'),
+            //'create' => Pages\CreateAreaInterest::route('/create'),
             'edit' => Pages\EditAreaInterest::route('/{record}/edit'),
         ];
     }    
